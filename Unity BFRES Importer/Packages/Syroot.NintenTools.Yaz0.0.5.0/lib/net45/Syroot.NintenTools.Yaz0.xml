@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syroot.NintenTools.Yaz0</name>
+    </assembly>
+    <members>
+        <member name="T:Syroot.NintenTools.Yaz0.Yaz0Compression">
+            <summary>
+            Represents a collection of methods to decompress Yaz0-compressed data.
+            </summary>
+            <remarks>If data is decompressed into a <see cref="T:System.IO.MemoryStream"/>, no buffering has to be done, which is why
+            there are specific overloads for <see cref="T:System.IO.MemoryStream"/> instances. Buffering is required because of the high
+            amount of seeking to read self-referencing data chunks.</remarks>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Compression.Decompress(System.String,System.String)">
+            <summary>
+            Decompresses the Yaz0-compressed contents of the file with the given name and writes them into the file
+            with the given output name. The decompression is done in memory before it is written back to the output
+            stream.
+            </summary>
+            <param name="inputFile">The name of the file from which the Yaz0-compressed data will be read.</param>
+            <param name="outputFile">The name of the file to which the decompressed data will be written.</param>
+            <returns>The number of decompressed bytes written to the output file.</returns>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Compression.Decompress(System.String,System.IO.Stream)">
+            <summary>
+            Decompresses the Yaz0-compressed contents of the file with the given name and writes them into the given
+            output <see cref="T:System.IO.Stream"/>. The decompression is done in memory before it is written back to the output
+            stream. The stream stays open after this method returned the number of decompressed bytes written.
+            </summary>
+            <param name="inputFile">The name of the file from which the Yaz0-compressed data will be read.</param>
+            <param name="output">The output <see cref="T:System.IO.Stream"/> to which the decompressed data will be written.</param>
+            <returns>The number of decompressed bytes written to the output stream.</returns>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Compression.Decompress(System.String,System.IO.MemoryStream)">
+            <summary>
+            Decompresses the Yaz0-compressed contents of the file with the given name and writes them into the given
+            output <see cref="T:System.IO.MemoryStream"/>. The stream stays open after this method returned the number of
+            decompressed bytes written.
+            </summary>
+            <param name="inputFile">The name of the file from which the Yaz0-compressed data will be read.</param>
+            <param name="output">The output <see cref="T:System.IO.MemoryStream"/> to which the decompressed data will be written
+            directly.</param>
+            <returns>The number of decompressed bytes written to the output stream.</returns>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Compression.Decompress(System.IO.Stream,System.String)">
+            <summary>
+            Decompresses the Yaz0-compressed contents of the input <see cref="T:System.IO.Stream"/> and writes them into the file
+            with the given output name. The decompression is done in memory before it is written back to the output
+            stream. The stream stays open after this method returned the number of decompressed bytes written.
+            </summary>
+            <param name="input">The input <see cref="T:System.IO.Stream"/> from which the Yaz0-compressed data will be read.</param>
+            <param name="outputFile">The name of the file to which the decompressed data will be written.</param>
+            <returns>The number of decompressed bytes written to the output file.</returns>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Compression.Decompress(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            Decompresses the Yaz0-compressed contents of the input <see cref="T:System.IO.Stream"/> and writes them into the given
+            output <see cref="T:System.IO.Stream"/>. The decompression is done in memory before it is written back to the output
+            stream. Both streams stay open after this method returned the number of decompressed bytes written.
+            </summary>
+            <param name="input">The input <see cref="T:System.IO.Stream"/> from which the Yaz0-compressed data will be read.</param>
+            <param name="output">The output <see cref="T:System.IO.Stream"/> to which the decompressed data will be written.</param>
+            <returns>The number of decompressed bytes written to the output stream.</returns>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Compression.Decompress(System.IO.Stream,System.IO.MemoryStream)">
+            <summary>
+            Decompresses the Yaz0-compressed contents of the input <see cref="T:System.IO.Stream"/> and writes them directly into
+            the given output <see cref="T:System.IO.MemoryStream"/>. Both streams stay open after this method returned the number of
+            decompressed bytes written.
+            </summary>
+            <param name="input">The input <see cref="T:System.IO.Stream"/> from which the Yaz0-compressed data will be read.</param>
+            <param name="output">The output <see cref="T:System.IO.MemoryStream"/> to which the decompressed data will be written
+            directly.</param>
+            <returns>The number of decompressed bytes written to the output stream.</returns>
+        </member>
+        <member name="T:Syroot.NintenTools.Yaz0.Yaz0Exception">
+            <summary>
+            Represents an exception caused by invalid Yaz0 data.
+            </summary>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Exception.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syroot.NintenTools.Yaz0.Yaz0Exception"/> class.
+            </summary>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Exception.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syroot.NintenTools.Yaz0.Yaz0Exception"/> class with the given message.
+            </summary>
+            <param name="message">The message provided with the exception.</param>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Exception.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syroot.NintenTools.Yaz0.Yaz0Exception"/> class with the given message and inner
+            exception.
+            </summary>
+            <param name="message">The message provided with the exception.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:Syroot.NintenTools.Yaz0.Yaz0Exception.#ctor(System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syroot.NintenTools.Yaz0.Yaz0Exception"/> class with the given message.
+            </summary>
+            <param name="format">A composite format string representing the message.</param>
+            <param name="args">An object array that contains zero or more objects to format.</param>
+        </member>
+    </members>
+</doc>
