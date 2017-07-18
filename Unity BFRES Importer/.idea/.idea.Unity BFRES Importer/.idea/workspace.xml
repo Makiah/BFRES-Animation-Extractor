@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5e0c7dc-6ad6-4b92-bfc0-5b5cf68cee1e" name="Default" comment="" />
+    <list default="true" id="c8b04447-7194-4d77-adff-cd24c772a6ef" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,19 +11,299 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BfresImporter.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/BfresImporter.cs">
+    <leaf>
+      <file leaf-file-name="Importer.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Importer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
-                <marker date="1499394663151" expanded="true" signature="6:160" ph="..." />
-                <marker date="1499394663151" expanded="true" signature="204:346" ph="{...}" />
-                <marker date="1499394663151" expanded="true" signature="288:344" ph="{...}" />
-                <marker date="1499394663151" expanded="true" signature="440:704" ph="{...}" />
-                <marker date="1499394663151" expanded="true" signature="484:702" ph="{...}" />
-                <marker date="1499394663151" expanded="true" signature="631:696" ph="{...}" />
+                <marker date="1500415350000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1500415350000" expanded="true" signature="118:239" ph="{...}" />
+                <marker date="1500415350000" expanded="true" signature="168:175" ph="{...}" />
+                <marker date="1500415350000" expanded="true" signature="230:237" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Test/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="168" column="36" lean-forward="false" selection-start-line="168" selection-start-column="36" selection-end-line="168" selection-end-column="36" />
+              <folding>
+                <marker date="1499245114000" expanded="false" signature="6:298" ph="..." />
+                <marker date="1499245114000" expanded="true" signature="339:9049" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="368:9047" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="628:729" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="1002:1712" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="1264:1617" ph="/* ResFile resFile = new ResFile(@&quot;D:\Archive\Wii U\_Roms\MK8\content\race_common\Coin\Coin.bfres&quot;); ... */" />
+                <marker date="1499245114000" expanded="true" signature="1930:2464" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2005:2454" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2220:2299" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2320:2440" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2525:3343" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2594:3333" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2669:3319" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2743:3301" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3024:3279" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3111:3253" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3426:4051" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3495:4041" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3611:4027" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3832:3984" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="4117:5074" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="4186:5064" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="4318:4815" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5143:6587" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5212:6577" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5301:6563" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5403:6545" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5472:6523" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="6656:8355" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="6725:8345" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="6857:8331" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="7141:8272" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="7286:7876" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="7409:7543" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="7689:7850" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="7941:8250" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="8030:8224" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="8440:9041" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="8506:9031" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="8636:9017" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryDataReader.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Libraries/BinaryData/src/Syroot.BinaryData/BinaryDataReader.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="1011" column="9" lean-forward="false" selection-start-line="1011" selection-start-column="9" selection-end-line="1011" selection-end-column="9" />
+              <folding>
+                <marker date="1500415963000" expanded="false" signature="6:202" ph="..." />
+                <marker date="1500415963000" expanded="true" signature="231:44515" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="238:371" ph="/// Represents an extended &lt;see cref=&quot;BinaryReader&quot;/&gt; supporting special file format data types. ... " />
+                <marker date="1500415963000" expanded="true" signature="483:44513" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="789:1175" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream and ... " />
+                <marker date="1500415963000" expanded="true" signature="1274:1294" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="1304:1979" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream, UTF-8 ... " />
+                <marker date="1500415963000" expanded="true" signature="2098:2118" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="2128:2668" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream and ... " />
+                <marker date="1500415963000" expanded="true" signature="2776:2796" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="2806:3563" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream and ... " />
+                <marker date="1500415963000" expanded="true" signature="3691:3801" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="3933:4041" ph="/// Gets or sets the byte order used to parse binary data with. ... " />
+                <marker date="1500415963000" expanded="true" signature="4076:4335" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="4102:4165" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="4181:4325" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="4345:4618" ph="/// Gets the encoding used for string related operations where no other encoding has been provided. Due to the ... " />
+                <marker date="1500415963000" expanded="true" signature="4651:4713" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="4723:4872" ph="/// Gets a value indicating whether the end of the stream has been reached and no more data can be read. ... " />
+                <marker date="1500415963000" expanded="true" signature="4904:4993" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="5003:5155" ph="/// Gets the length in bytes of the stream in bytes. This is a shortcut to the base stream Length property. ... " />
+                <marker date="1500415963000" expanded="true" signature="5182:5248" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="5258:5456" ph="/// Gets a value indicating whether multibyte data requires to be reversed before being parsed, according to the ... " />
+                <marker date="1500415963000" expanded="true" signature="5491:5553" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="5563:5733" ph="/// Gets or sets the position within the current stream. This is a shortcut to the base stream Position ... " />
+                <marker date="1500415963000" expanded="true" signature="5762:5879" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="6011:6173" ph="/// Aligns the reader to the next given byte multiple. ... " />
+                <marker date="1500415963000" expanded="true" signature="6214:6301" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="6311:6699" ph="/// Reads a &lt;see cref=&quot;Boolean&quot;/&gt; value from the current stream. The &lt;see cref=&quot;Boolean&quot;/&gt; is available in the ... " />
+                <marker date="1500415963000" expanded="true" signature="6762:7313" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="6800:7303" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="7323:7687" ph="/// Reads the specified number of &lt;see cref=&quot;Boolean&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="7736:7814" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="7824:8383" ph="/// Reads the specified number of &lt;see cref=&quot;Boolean&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="8460:8687" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="8573:8650" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="8697:8889" ph="/// Reads a &lt;see cref=&quot;DateTime&quot;/&gt; from the current stream. ... " />
+                <marker date="1500415963000" expanded="true" signature="8928:9012" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="9022:9408" ph="/// Reads a &lt;see cref=&quot;DateTime&quot;/&gt; from the current stream. The &lt;see cref=&quot;DateTime&quot;/&gt; is available in the ... " />
+                <marker date="1500415963000" expanded="true" signature="9474:9974" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="9512:9964" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="9984:10352" ph="/// Reads the specified number of &lt;see cref=&quot;DateTime&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="10403:10627" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="10518:10590" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="10637:11214" ph="/// Reads the specified number of &lt;see cref=&quot;DateTime&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="11294:11524" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="11409:11487" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="11534:11816" ph="/// Reads an 16-byte floating point value from the current stream and advances the current position of the ... " />
+                <marker date="1500415963000" expanded="true" signature="11862:12180" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="11904:12082" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="12099:12170" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="12190:12690" ph="/// Reads the specified number of &lt;see cref=&quot;Decimal&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="12739:12812" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="12822:13100" ph="/// Reads an 8-byte floating point value from the current stream and advances the current position of the stream ... " />
+                <marker date="1500415963000" expanded="true" signature="13144:13468" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="13186:13371" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="13388:13458" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="13478:13973" ph="/// Reads the specified number of &lt;see cref=&quot;Double&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="14020:14092" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="14102:14662" ph="/// Reads the specified enum value from the current stream and advances the current position by the size of the ... " />
+                <marker date="1500415963000" expanded="true" signature="14748:14819" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="14829:15434" ph="/// Reads the specified number of enum values from the current stream into an array of the enum type. Optionally ... " />
+                <marker date="1500415963000" expanded="true" signature="15534:15749" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="15635:15712" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="15759:16022" ph="/// Reads a 2-byte signed integer from the current stream and advances the current position of the stream by two ... " />
+                <marker date="1500415963000" expanded="true" signature="16064:16385" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="16106:16289" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="16306:16375" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="16395:16885" ph="/// Reads the specified number of &lt;see cref=&quot;Int16&quot;/&gt; values from the current stream into a &lt;see cref=&quot;Int16&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="16930:17001" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="17011:17275" ph="/// Reads a 4-byte signed integer from the current stream and advances the current position of the stream by ... " />
+                <marker date="1500415963000" expanded="true" signature="17317:17636" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="17359:17540" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="17557:17626" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="17646:18136" ph="/// Reads the specified number of &lt;see cref=&quot;Int32&quot;/&gt; values from the current stream into a &lt;see cref=&quot;Int32&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="18181:18252" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="18262:18528" ph="/// Reads an 8-byte signed integer from the current stream and advances the current position of the stream by ... " />
+                <marker date="1500415963000" expanded="true" signature="18570:18890" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="18612:18794" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="18811:18880" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="18900:19390" ph="/// Reads the specified number of &lt;see cref=&quot;Int64&quot;/&gt; values from the current stream into a &lt;see cref=&quot;Int64&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="19435:19506" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="19524:19881" ph="/// Reads an object of type &lt;typeparamref name=&quot;T&quot;/&gt; from the current stream. ... " />
+                <marker date="1500415963000" expanded="true" signature="19914:20016" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="20026:20397" ph="/// Reads the specified number of objects of type &lt;typeparamref name=&quot;T&quot;/&gt; from the current stream. ... " />
+                <marker date="1500415963000" expanded="true" signature="20442:20517" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="20527:21017" ph="/// Reads the specified number of &lt;see cref=&quot;SByte&quot;/&gt; values from the current stream into a &lt;see cref=&quot;SByte&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="21062:21133" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="21143:21419" ph="/// Reads a 4-byte floating point value from the current stream and advances the current position of the stream ... " />
+                <marker date="1500415963000" expanded="true" signature="21463:21786" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="21505:21689" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="21706:21776" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="21796:22291" ph="/// Reads the specified number of &lt;see cref=&quot;Single&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="22338:22410" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="22420:22730" ph="/// Reads a string from the current stream. The string is available in the specified binary format. ... " />
+                <marker date="1500415963000" expanded="true" signature="22790:22859" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="22869:23280" ph="/// Reads a string from the current stream. The string is available in the specified binary format and encoding. ... " />
+                <marker date="1500415963000" expanded="true" signature="23359:24503" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="23397:24493" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="24513:24837" ph="/// Reads a string from the current stream. The string has neither a prefix or postfix, the length has to be ... " />
+                <marker date="1500415963000" expanded="true" signature="24882:24951" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="24961:25437" ph="/// Reads a string from the current stream. The string has neither a prefix or postfix, the length has to be ... " />
+                <marker date="1500415963000" expanded="true" signature="25501:25579" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="25589:25942" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="25989:26207" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="26100:26170" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="26217:26722" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="26796:27020" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="26907:26983" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="27030:27636" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="27729:27963" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="27840:27926" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="27973:28480" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="28539:28763" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="28650:28726" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="28773:29432" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="29510:29744" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="29621:29707" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="29754:30042" ph="/// Reads a 2-byte unsigned integer from the current stream using little-endian encoding and advances the ... " />
+                <marker date="1500415963000" expanded="true" signature="30086:30410" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="30128:30313" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="30330:30400" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="30420:30915" ph="/// Reads the specified number of &lt;see cref=&quot;UInt16&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="30962:31034" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="31044:31306" ph="/// Reads an 8-byte unsigned integer from the current stream and advances the position of the stream by eight ... " />
+                <marker date="1500415963000" expanded="true" signature="31350:31672" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="31392:31575" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="31592:31662" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="31682:32177" ph="/// Reads the specified number of &lt;see cref=&quot;UInt32&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="32224:32296" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="32306:32568" ph="/// Reads an 8-byte unsigned integer from the current stream and advances the position of the stream by eight ... " />
+                <marker date="1500415963000" expanded="true" signature="32612:32935" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="32654:32838" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="32855:32925" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="32945:33440" ph="/// Reads the specified number of &lt;see cref=&quot;UInt64&quot;/&gt; values from the current stream into a ... " />
+                <marker date="1500415963000" expanded="true" signature="33487:33559" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="33569:33891" ph="/// Sets the position within the current stream. This is a shortcut to the base stream Seek method. ... " />
+                <marker date="1500415963000" expanded="true" signature="33929:34002" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="34012:34478" ph="/// Sets the position within the current stream. This is a shortcut to the base stream Seek method. ... " />
+                <marker date="1500415963000" expanded="true" signature="34535:34607" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="34617:34867" ph="/// Creates a &lt;see cref=&quot;SeekTask&quot;/&gt; to restore the current position after it has been disposed. ... " />
+                <marker date="1500415963000" expanded="true" signature="34907:34984" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="34994:35415" ph="/// Creates a &lt;see cref=&quot;SeekTask&quot;/&gt; with the given parameters. As soon as the returned &lt;see cref=&quot;SeekTask&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="35466:35548" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="35558:36123" ph="/// Creates a &lt;see cref=&quot;SeekTask&quot;/&gt; with the given parameters. As soon as the returned &lt;see cref=&quot;SeekTask&quot;/&gt; ... " />
+                <marker date="1500415963000" expanded="true" signature="36193:36274" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="36462:36667" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="36555:36630" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="36761:37303" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="36819:36952" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="37145:37250" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="37395:37817" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="37636:37781" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="37950:40865" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38005:40591" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38063:38432" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38173:38278" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38303:38414" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38478:38623" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38673:38774" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38821:38896" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="38947:39050" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39100:39178" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39227:39304" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39352:39428" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39476:39552" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39600:39676" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39724:39800" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39849:39926" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="39975:40052" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="40101:40178" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="40227:40304" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="40356:40453" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="40474:40577" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="40608:40855" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="40952:43009" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="41221:41334" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="41424:42969" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="41573:41679" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="41734:41827" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="42061:42178" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="42199:42567" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="42372:42513" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="42650:42955" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="43120:43332" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="43400:44507" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="43662:43930" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="43796:43916" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="43979:44406" ph="{...}" />
+                <marker date="1500415963000" expanded="true" signature="44139:44392" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Script/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="92" column="31" lean-forward="true" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+              <folding>
+                <marker date="1500416219000" expanded="true" signature="6:186" ph="..." />
+                <marker date="1500416219000" expanded="true" signature="56:166" ph="/* using Microsoft.CodeAnalysis.CSharp.Scripting; //Removed for OS X ... */" />
+                <marker date="1500416219000" expanded="true" signature="229:5040" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="236:357" ph="/// Represents the main class of the application containing the program entry point. ... " />
+                <marker date="1500416219000" expanded="true" signature="384:5038" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="818:1124" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="844:965" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="1005:1114" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="1183:2816" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="1329:1969" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="2097:2242" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="2363:2504" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="2584:2716" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="2733:2806" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="2857:4735" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="3292:3471" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="3684:4618" ph="/* try ... */" />
+                <marker date="1500416219000" expanded="true" signature="4823:5032" ph="{...}" />
+                <marker date="1500416219000" expanded="true" signature="4865:4948" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -31,24 +311,24 @@
       </file>
     </leaf>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Libraries/BinaryData/src/Syroot.BinaryData/BinaryDataReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Script/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Test/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Importer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/BfresImporter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Libraries/BinaryData/src/Syroot.BinaryData/BinaryDataReader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Script/Program.cs" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1453" />
-    <option name="height" value="744" />
+    <option name="x" value="1284" />
+    <option name="width" value="1276" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -65,28 +345,240 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NintenTools.Bfres" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Syroot.NintenTools.Bfres.Test" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NintenTools.Bfres" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Syroot.NintenTools.Bfres.Script" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NintenTools.Bfres" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryData" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryData" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Syroot.BinaryData" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unity BFRES Importer (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -113,55 +605,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
     <configuration default="true" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="false" name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
@@ -174,23 +618,6 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e5e0c7dc-6ad6-4b92-bfc0-5b5cf68cee1e" name="Default" comment="" />
-      <created>1499377292088</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1499377292088</updated>
-      <workItem from="1499377310671" duration="41000" />
-      <workItem from="1499377872846" duration="818000" />
-      <workItem from="1499389283293" duration="909000" />
-      <workItem from="1499393741672" duration="1071000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2839000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -201,33 +628,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1453" height="744" extended-state="6" />
+    <frame x="1284" y="0" width="1276" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3911672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18441197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -237,62 +659,291 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/BfresImporter.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Test/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="179">
+          <caret line="168" column="36" lean-forward="false" selection-start-line="168" selection-start-column="36" selection-end-line="168" selection-end-column="36" />
           <folding>
-            <marker date="1499394663151" expanded="true" signature="6:160" ph="..." />
-            <marker date="1499394663151" expanded="true" signature="204:346" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="288:344" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="440:704" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="484:702" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="631:696" ph="{...}" />
+            <marker date="1499245114000" expanded="false" signature="6:298" ph="..." />
+            <marker date="1499245114000" expanded="true" signature="339:9049" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="368:9047" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="628:729" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1002:1712" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1264:1617" ph="/* ResFile resFile = new ResFile(@&quot;D:\Archive\Wii U\_Roms\MK8\content\race_common\Coin\Coin.bfres&quot;); ... */" />
+            <marker date="1499245114000" expanded="true" signature="1930:2464" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2005:2454" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2220:2299" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2320:2440" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2525:3343" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2594:3333" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2669:3319" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2743:3301" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3024:3279" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3111:3253" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3426:4051" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3495:4041" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3611:4027" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3832:3984" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="4117:5074" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="4186:5064" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="4318:4815" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5143:6587" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5212:6577" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5301:6563" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5403:6545" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5472:6523" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="6656:8355" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="6725:8345" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="6857:8331" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="7141:8272" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="7286:7876" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="7409:7543" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="7689:7850" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="7941:8250" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="8030:8224" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="8440:9041" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="8506:9031" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="8636:9017" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/BfresImporter.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Libraries/BinaryData/src/Syroot.BinaryData/BinaryDataReader.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="518">
+          <caret line="1011" column="9" lean-forward="false" selection-start-line="1011" selection-start-column="9" selection-end-line="1011" selection-end-column="9" />
           <folding>
-            <marker date="1499394663151" expanded="true" signature="6:160" ph="..." />
-            <marker date="1499394663151" expanded="true" signature="204:346" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="288:344" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="440:704" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="484:702" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="631:696" ph="{...}" />
+            <marker date="1500415963000" expanded="false" signature="6:202" ph="..." />
+            <marker date="1500415963000" expanded="true" signature="231:44515" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="238:371" ph="/// Represents an extended &lt;see cref=&quot;BinaryReader&quot;/&gt; supporting special file format data types. ... " />
+            <marker date="1500415963000" expanded="true" signature="483:44513" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="789:1175" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream and ... " />
+            <marker date="1500415963000" expanded="true" signature="1274:1294" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="1304:1979" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream, UTF-8 ... " />
+            <marker date="1500415963000" expanded="true" signature="2098:2118" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="2128:2668" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream and ... " />
+            <marker date="1500415963000" expanded="true" signature="2776:2796" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="2806:3563" ph="/// Initializes a new instance of the &lt;see cref=&quot;BinaryDataReader&quot;/&gt; class based on the specified stream and ... " />
+            <marker date="1500415963000" expanded="true" signature="3691:3801" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="3933:4041" ph="/// Gets or sets the byte order used to parse binary data with. ... " />
+            <marker date="1500415963000" expanded="true" signature="4076:4335" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="4102:4165" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="4181:4325" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="4345:4618" ph="/// Gets the encoding used for string related operations where no other encoding has been provided. Due to the ... " />
+            <marker date="1500415963000" expanded="true" signature="4651:4713" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="4723:4872" ph="/// Gets a value indicating whether the end of the stream has been reached and no more data can be read. ... " />
+            <marker date="1500415963000" expanded="true" signature="4904:4993" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="5003:5155" ph="/// Gets the length in bytes of the stream in bytes. This is a shortcut to the base stream Length property. ... " />
+            <marker date="1500415963000" expanded="true" signature="5182:5248" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="5258:5456" ph="/// Gets a value indicating whether multibyte data requires to be reversed before being parsed, according to the ... " />
+            <marker date="1500415963000" expanded="true" signature="5491:5553" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="5563:5733" ph="/// Gets or sets the position within the current stream. This is a shortcut to the base stream Position ... " />
+            <marker date="1500415963000" expanded="true" signature="5762:5879" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="6011:6173" ph="/// Aligns the reader to the next given byte multiple. ... " />
+            <marker date="1500415963000" expanded="true" signature="6214:6301" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="6311:6699" ph="/// Reads a &lt;see cref=&quot;Boolean&quot;/&gt; value from the current stream. The &lt;see cref=&quot;Boolean&quot;/&gt; is available in the ... " />
+            <marker date="1500415963000" expanded="true" signature="6762:7313" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="6800:7303" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="7323:7687" ph="/// Reads the specified number of &lt;see cref=&quot;Boolean&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="7736:7814" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="7824:8383" ph="/// Reads the specified number of &lt;see cref=&quot;Boolean&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="8460:8687" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="8573:8650" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="8697:8889" ph="/// Reads a &lt;see cref=&quot;DateTime&quot;/&gt; from the current stream. ... " />
+            <marker date="1500415963000" expanded="true" signature="8928:9012" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="9022:9408" ph="/// Reads a &lt;see cref=&quot;DateTime&quot;/&gt; from the current stream. The &lt;see cref=&quot;DateTime&quot;/&gt; is available in the ... " />
+            <marker date="1500415963000" expanded="true" signature="9474:9974" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="9512:9964" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="9984:10352" ph="/// Reads the specified number of &lt;see cref=&quot;DateTime&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="10403:10627" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="10518:10590" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="10637:11214" ph="/// Reads the specified number of &lt;see cref=&quot;DateTime&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="11294:11524" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="11409:11487" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="11534:11816" ph="/// Reads an 16-byte floating point value from the current stream and advances the current position of the ... " />
+            <marker date="1500415963000" expanded="true" signature="11862:12180" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="11904:12082" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="12099:12170" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="12190:12690" ph="/// Reads the specified number of &lt;see cref=&quot;Decimal&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="12739:12812" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="12822:13100" ph="/// Reads an 8-byte floating point value from the current stream and advances the current position of the stream ... " />
+            <marker date="1500415963000" expanded="true" signature="13144:13468" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="13186:13371" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="13388:13458" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="13478:13973" ph="/// Reads the specified number of &lt;see cref=&quot;Double&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="14020:14092" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="14102:14662" ph="/// Reads the specified enum value from the current stream and advances the current position by the size of the ... " />
+            <marker date="1500415963000" expanded="true" signature="14748:14819" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="14829:15434" ph="/// Reads the specified number of enum values from the current stream into an array of the enum type. Optionally ... " />
+            <marker date="1500415963000" expanded="true" signature="15534:15749" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="15635:15712" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="15759:16022" ph="/// Reads a 2-byte signed integer from the current stream and advances the current position of the stream by two ... " />
+            <marker date="1500415963000" expanded="true" signature="16064:16385" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="16106:16289" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="16306:16375" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="16395:16885" ph="/// Reads the specified number of &lt;see cref=&quot;Int16&quot;/&gt; values from the current stream into a &lt;see cref=&quot;Int16&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="16930:17001" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="17011:17275" ph="/// Reads a 4-byte signed integer from the current stream and advances the current position of the stream by ... " />
+            <marker date="1500415963000" expanded="true" signature="17317:17636" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="17359:17540" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="17557:17626" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="17646:18136" ph="/// Reads the specified number of &lt;see cref=&quot;Int32&quot;/&gt; values from the current stream into a &lt;see cref=&quot;Int32&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="18181:18252" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="18262:18528" ph="/// Reads an 8-byte signed integer from the current stream and advances the current position of the stream by ... " />
+            <marker date="1500415963000" expanded="true" signature="18570:18890" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="18612:18794" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="18811:18880" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="18900:19390" ph="/// Reads the specified number of &lt;see cref=&quot;Int64&quot;/&gt; values from the current stream into a &lt;see cref=&quot;Int64&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="19435:19506" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="19524:19881" ph="/// Reads an object of type &lt;typeparamref name=&quot;T&quot;/&gt; from the current stream. ... " />
+            <marker date="1500415963000" expanded="true" signature="19914:20016" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="20026:20397" ph="/// Reads the specified number of objects of type &lt;typeparamref name=&quot;T&quot;/&gt; from the current stream. ... " />
+            <marker date="1500415963000" expanded="true" signature="20442:20517" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="20527:21017" ph="/// Reads the specified number of &lt;see cref=&quot;SByte&quot;/&gt; values from the current stream into a &lt;see cref=&quot;SByte&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="21062:21133" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="21143:21419" ph="/// Reads a 4-byte floating point value from the current stream and advances the current position of the stream ... " />
+            <marker date="1500415963000" expanded="true" signature="21463:21786" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="21505:21689" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="21706:21776" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="21796:22291" ph="/// Reads the specified number of &lt;see cref=&quot;Single&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="22338:22410" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="22420:22730" ph="/// Reads a string from the current stream. The string is available in the specified binary format. ... " />
+            <marker date="1500415963000" expanded="true" signature="22790:22859" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="22869:23280" ph="/// Reads a string from the current stream. The string is available in the specified binary format and encoding. ... " />
+            <marker date="1500415963000" expanded="true" signature="23359:24503" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="23397:24493" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="24513:24837" ph="/// Reads a string from the current stream. The string has neither a prefix or postfix, the length has to be ... " />
+            <marker date="1500415963000" expanded="true" signature="24882:24951" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="24961:25437" ph="/// Reads a string from the current stream. The string has neither a prefix or postfix, the length has to be ... " />
+            <marker date="1500415963000" expanded="true" signature="25501:25579" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="25589:25942" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="25989:26207" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="26100:26170" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="26217:26722" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="26796:27020" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="26907:26983" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="27030:27636" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="27729:27963" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="27840:27926" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="27973:28480" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="28539:28763" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="28650:28726" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="28773:29432" ph="/// Reads the specified number of &lt;see cref=&quot;String&quot;/&gt; from the current stream into a &lt;see cref=&quot;String&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="29510:29744" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="29621:29707" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="29754:30042" ph="/// Reads a 2-byte unsigned integer from the current stream using little-endian encoding and advances the ... " />
+            <marker date="1500415963000" expanded="true" signature="30086:30410" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="30128:30313" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="30330:30400" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="30420:30915" ph="/// Reads the specified number of &lt;see cref=&quot;UInt16&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="30962:31034" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="31044:31306" ph="/// Reads an 8-byte unsigned integer from the current stream and advances the position of the stream by eight ... " />
+            <marker date="1500415963000" expanded="true" signature="31350:31672" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="31392:31575" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="31592:31662" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="31682:32177" ph="/// Reads the specified number of &lt;see cref=&quot;UInt32&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="32224:32296" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="32306:32568" ph="/// Reads an 8-byte unsigned integer from the current stream and advances the position of the stream by eight ... " />
+            <marker date="1500415963000" expanded="true" signature="32612:32935" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="32654:32838" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="32855:32925" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="32945:33440" ph="/// Reads the specified number of &lt;see cref=&quot;UInt64&quot;/&gt; values from the current stream into a ... " />
+            <marker date="1500415963000" expanded="true" signature="33487:33559" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="33569:33891" ph="/// Sets the position within the current stream. This is a shortcut to the base stream Seek method. ... " />
+            <marker date="1500415963000" expanded="true" signature="33929:34002" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="34012:34478" ph="/// Sets the position within the current stream. This is a shortcut to the base stream Seek method. ... " />
+            <marker date="1500415963000" expanded="true" signature="34535:34607" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="34617:34867" ph="/// Creates a &lt;see cref=&quot;SeekTask&quot;/&gt; to restore the current position after it has been disposed. ... " />
+            <marker date="1500415963000" expanded="true" signature="34907:34984" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="34994:35415" ph="/// Creates a &lt;see cref=&quot;SeekTask&quot;/&gt; with the given parameters. As soon as the returned &lt;see cref=&quot;SeekTask&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="35466:35548" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="35558:36123" ph="/// Creates a &lt;see cref=&quot;SeekTask&quot;/&gt; with the given parameters. As soon as the returned &lt;see cref=&quot;SeekTask&quot;/&gt; ... " />
+            <marker date="1500415963000" expanded="true" signature="36193:36274" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="36462:36667" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="36555:36630" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="36761:37303" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="36819:36952" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="37145:37250" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="37395:37817" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="37636:37781" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="37950:40865" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38005:40591" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38063:38432" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38173:38278" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38303:38414" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38478:38623" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38673:38774" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38821:38896" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="38947:39050" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39100:39178" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39227:39304" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39352:39428" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39476:39552" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39600:39676" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39724:39800" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39849:39926" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="39975:40052" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="40101:40178" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="40227:40304" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="40356:40453" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="40474:40577" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="40608:40855" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="40952:43009" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="41221:41334" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="41424:42969" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="41573:41679" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="41734:41827" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="42061:42178" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="42199:42567" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="42372:42513" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="42650:42955" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="43120:43332" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="43400:44507" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="43662:43930" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="43796:43916" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="43979:44406" ph="{...}" />
+            <marker date="1500415963000" expanded="true" signature="44139:44392" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/BfresImporter.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Script/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="92" column="31" lean-forward="true" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
           <folding>
-            <marker date="1499394663151" expanded="true" signature="6:160" ph="..." />
-            <marker date="1499394663151" expanded="true" signature="204:346" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="288:344" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="440:704" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="484:702" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="631:696" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="6:186" ph="..." />
+            <marker date="1500416219000" expanded="true" signature="56:166" ph="/* using Microsoft.CodeAnalysis.CSharp.Scripting; //Removed for OS X ... */" />
+            <marker date="1500416219000" expanded="true" signature="229:5040" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="236:357" ph="/// Represents the main class of the application containing the program entry point. ... " />
+            <marker date="1500416219000" expanded="true" signature="384:5038" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="818:1124" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="844:965" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="1005:1114" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="1183:2816" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="1329:1969" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="2097:2242" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="2363:2504" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="2584:2716" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="2733:2806" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="2857:4735" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="3292:3471" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="3684:4618" ph="/* try ... */" />
+            <marker date="1500416219000" expanded="true" signature="4823:5032" ph="{...}" />
+            <marker date="1500416219000" expanded="true" signature="4865:4948" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/BfresImporter.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Importer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
-            <marker date="1499394663151" expanded="true" signature="6:160" ph="..." />
-            <marker date="1499394663151" expanded="true" signature="204:346" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="288:344" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="440:704" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="484:702" ph="{...}" />
-            <marker date="1499394663151" expanded="true" signature="631:696" ph="{...}" />
+            <marker date="1500415350000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1500415350000" expanded="true" signature="118:239" ph="{...}" />
+            <marker date="1500415350000" expanded="true" signature="168:175" ph="{...}" />
+            <marker date="1500415350000" expanded="true" signature="230:237" ph="{...}" />
           </folding>
         </state>
       </provider>

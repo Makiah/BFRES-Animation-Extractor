@@ -1,0 +1,748 @@
+// ==== Structures =====================================================================================================
+
+typedef struct // Model
+{
+	char signature[4]; // FMDL
+	NameOffset ofsName;
+	NameOffset ofsPath;
+	Offset ofsSkeleton;
+	Offset ofsVertexBufferList;
+	Offset ofsShapeDict;
+	Offset ofsMaterialDict;
+	Offset ofsUserDataDict;
+	ushort numVertexBuffer;
+	ushort numShape;
+	ushort numMaterial;
+	ushort numUserData;
+	uint numTotalVertices;
+	uint userPointer;
+	// Read skeleton.
+	FSeek(ofsSkeleton.target);
+	Skeleton skeleton;
+	// Read vertex buffers.
+	FSeek(ofsVertexBufferList.target);
+	VertexBuffer vertexBuffers[numVertexBuffer] <optimize=false>;
+	// Read shapes.
+	if (ofsShapeDict.value)
+	{
+		FSeek(ofsShapeDict.target);
+		Dict shapes(DT_SHAPE);
+	}
+	// Read materials.
+	FSeek(ofsMaterialDict.target);
+	Dict materials(DT_MATERIAL);
+	// Read user data.
+	if (ofsUserDataDict.value)
+	{
+		FSeek(ofsUserDataDict.target);
+		Dict userData(DT_USER_DATA);
+	}
+} Model <bgcolor=0xCDE6FF, read=ModelRead>;
+
+typedef struct // Buffer
+{
+	uint dataPointer; // Set at runtime
+	uint size;
+	uint handle; // Set at runtime
+	ushort stride;
+	ushort numBuffering;
+	uint contextPointer; // Set at runtime
+	Offset ofsData;
+	local uint pos <hidden=true> = FTell();
+	// Read the data.
+	FSeek(ofsData.target);
+	ubyte data[size * numBuffering];
+	FSeek(pos); // Seek back to header end.
+} Buffer <fgcolor=0x0000FF>;
+
+// ---- FSKL ----
+
+typedef struct // Skeleton
+{
+	char signature[4]; // FSKL
+	uint flgUnused : 8 <hidden=true>;
+	enum <uint> SkeletonScaling
+	{
+		SS_None,
+		SS_Standard,
+		SS_Maya,
+		SS_Softimage
+	} flgScaling : 2;
+	uint flgUnused : 2 <hidden=true>;
+	enum <uint> SkeletonRotation
+	{
+		SR_Quaternion,
+		SR_EulerXYZ
+	} flgRotation : 1;
+	ushort numBone;
+	ushort numSmoothMatrix;
+	ushort numRigidMatrix;
+	ushort padding <fgcolor=0x808080, hidden=true>;
+	Offset ofsBoneDict;
+	Offset ofsBoneList;
+	Offset ofsMatrixToBoneList;
+	Offset ofsInverseModelMatrixList;
+	uint userPointer;
+	// Read the bone dict and list.
+	if (ofsBoneDict.value)
+	{
+		FSeek(ofsBoneDict.target);
+		Dict boneDict(DT_BONE);
+	}
+	if (ofsBoneList.value)
+	{
+		FSeek(ofsBoneList.target);
+		Bone bones[numBone] <optimize=false>;
+	}
+	// Read the matrix to bone list.
+	if (ofsMatrixToBoneList.value && numSmoothMatrix + numRigidMatrix)
+	{
+		FSeek(ofsMatrixToBoneList.target);
+		ushort matrixToBoneList[numSmoothMatrix + numRigidMatrix] <optimize=true>;
+	}
+	// Read the inversion matrix array.
+	if (ofsInverseModelMatrixList.value && numSmoothMatrix)
+	{
+		FSeek(ofsInverseModelMatrixList.target);
+		Matrix4x3 inverseModelMatrices[numSmoothMatrix] <optimize=true>;
+	}
+} Skeleton <bgcolor=0xBDD4EB>;
+
+typedef struct // Bone
+{
+	NameOffset ofsName;
+	ushort idx;
+	ushort idxParent;
+	short idxSmoothMatrix;
+	short idxRigidMatrix;
+	ushort idxBillboard;
+	ushort numUserData;
+	enum <uint> BoneFlags
+	{
+		BF_None,
+		BF_Visible
+	} flg : 1;
+	uint flgUnused : 11 <hidden=true>;
+	enum <uint> BoneRotation
+	{
+		BR_Quaternion,
+		BR_EulerXYZ
+	} flgRotation : 1;
+	uint flgUnused : 3 <hidden=true>;
+	enum <uint> BoneBillboard
+	{
+		BB_None,
+		BB_Child,
+		BB_WorldViewVector,
+		BB_WorldViewPoint,
+		BB_ScreenViewVector,
+		BB_ScreenViewPoint,
+		BB_YAxisViewVector,
+		BB_YAxisViewPoint
+	} flgBillboard : 3;
+	uint flgUnused : 4 <hidden=true>;
+	enum <uint> BoneTransform
+	{
+		BT_None,
+		BT_SegmentScaleCompensate = 1 << 0,
+		BT_ScaleUniform = 1 << 1,
+		BT_ScaleVolumeOne = 1 << 2,
+		BT_RotateZero = 1 << 3,
+		BT_TranslateZero = 1 << 4,
+		BT_ScaleOne = BT_ScaleVolumeOne | BT_ScaleUniform,
+		BT_RotateTranslateZero = BT_RotateZero | BT_TranslateZero,
+		BT_Identity = BT_ScaleOne | BT_RotateZero | BT_TranslateZero
+	} flgTransform : 5;
+	enum <uint> BoneTransformCumulative
+	{
+		BTC_None,
+		BTC_ScaleUniform = 1 << 0,
+		BTC_ScaleVolumeOne = 1 << 1,
+		BTC_RotateZero = 1 << 2,
+		BTC_TranslateZero = 1 << 3,
+		BTC_ScaleOne = BT_ScaleVolumeOne | BT_ScaleUniform,
+		BTC_RotateTranslateZero = BT_RotateZero | BT_TranslateZero,
+		BTC_Identity = BT_ScaleOne | BT_RotateZero | BT_TranslateZero
+	} flgTransformCumulative : 4;
+	Vector3F scale;
+	Vector4F rotation;
+	Vector3F translation;
+	Offset ofsUserDataDict;
+	// Read user data.
+	if (ofsUserDataDict.value)
+	{
+		FSeek(ofsUserDataDict.target);
+		Dict userData(DT_USER_DATA);
+	}
+} Bone <bgcolor=0xAEC4D9, read=BoneRead>;
+
+// ---- FVTX ----
+
+typedef struct // VertexBuffer
+{
+	char signature[4]; // FVTX
+	ubyte numVertexAttrib;
+	ubyte numBuffer;
+	ushort idx;
+	uint numVertices;
+	ubyte vertexSkinCount;
+	ubyte padding[3] <fgcolor=0x808080, hidden=true>; 
+	Offset ofsVertexAttribList;
+	Offset ofsVertexAttribDict;
+	Offset ofsVertexBufferList;
+	uint userPointer;
+	local uint pos <hidden=true> = FTell();
+	// Read the vertex attribute list and dict.
+	FSeek(ofsVertexAttribList.target);
+	VertexAttrib vertexAttribs[numVertexAttrib] <optimize=false>;
+	FSeek(ofsVertexAttribDict.target);
+	Dict vertexAttribDict(DT_VERTEX_ATTRIB);
+	// Read the buffers.
+	FSeek(ofsVertexBufferList.target);
+	Buffer buffers[numBuffer] <optimize=false>;
+	FSeek(pos); // Seek back to header end.
+} VertexBuffer <bgcolor=0xA1B5C8>;
+
+typedef struct // VertexAttrib
+{
+	NameOffset ofsName;
+	ubyte idxBuffer;
+	ubyte padding <fgcolor=0x808080, hidden=true>;
+	ushort offset;
+	enum <uint> GX2AttribFormat
+	{
+		GX2AF_8_UNorm = 0x00000000,
+		GX2AF_8_UInt = 0x00000100,
+		GX2AF_8_SNorm = 0x00000200,
+		GX2AF_8_SInt = 0x00000300,
+		GX2AF_8_UIntToSingle = 0x00000800,
+		GX2AF_8_SIntToSingle = 0x00000A00,
+		GX2AF_4_4_UNorm = 0x00000001,
+		GX2AF_16_UNorm = 0x00000002,
+		GX2AF_16_UInt = 0x00000102,
+		GX2AF_16_SNorm = 0x00000202,
+		GX2AF_16_SInt = 0x00000302,
+		GX2AF_16_Single = 0x00000803,
+		GX2AF_16_UIntToSingle = 0x00000802,
+		GX2AF_16_SIntToSingle = 0x00000A02,
+		GX2AF_8_8_UNorm = 0x00000004,
+		GX2AF_8_8_UInt = 0x00000104,
+		GX2AF_8_8_SNorm = 0x00000204,
+		GX2AF_8_8_SInt = 0x00000304,
+		GX2AF_8_8_UIntToSingle = 0x00000804,
+		GX2AF_8_8_SIntToSingle = 0x00000A04,
+		GX2AF_32_UInt = 0x00000105,
+		GX2AF_32_SInt = 0x00000305,
+		GX2AF_32_Single = 0x00000806,
+		GX2AF_16_16_UNorm = 0x00000007,
+		GX2AF_16_16_UInt = 0x00000107,
+		GX2AF_16_16_SNorm = 0x00000207,
+		GX2AF_16_16_SInt = 0x00000307,
+		GX2AF_16_16_Single = 0x00000808,
+		GX2AF_16_16_UIntToSingle = 0x00000807,
+		GX2AF_16_16_SIntToSingle = 0x00000A07,
+		GX2AF_10_11_11_Single = 0x00000809,
+		GX2AF_8_8_8_8_UNorm = 0x0000000A,
+		GX2AF_8_8_8_8_UInt = 0x0000010A,
+		GX2AF_8_8_8_8_SNorm = 0x0000020A,
+		GX2AF_8_8_8_8_SInt = 0x0000030A,
+		GX2AF_8_8_8_8_UIntToSingle = 0x0000080A,
+		GX2AF_8_8_8_8_SIntToSingle = 0x00000A0A,
+		GX2AF_10_10_10_2_UNorm = 0x0000000B,
+		GX2AF_10_10_10_2_UInt = 0x0000010B,
+		GX2AF_10_10_10_2_SNorm = 0x0000020B,
+		GX2AF_10_10_10_2_SInt = 0x0000030B,
+		GX2AF_32_32_UInt = 0x0000010C,
+		GX2AF_32_32_SInt = 0x0000030C,
+		GX2AF_32_32_Single = 0x0000080D,
+		GX2AF_16_16_16_16_UNorm = 0x0000000E,
+		GX2AF_16_16_16_16_UInt = 0x0000010E,
+		GX2AF_16_16_16_16_SNorm = 0x0000020E,
+		GX2AF_16_16_16_16_SInt = 0x0000030E,
+		GX2AF_16_16_16_16_Single = 0x0000080F,
+		GX2AF_16_16_16_16_UIntToSingle = 0x0000080E,
+		GX2AF_16_16_16_16_SIntToSingle = 0x00000A0E,
+		GX2AF_32_32_32_UInt = 0x00000110,
+		GX2AF_32_32_32_SInt = 0x00000310,
+		GX2AF_32_32_32_Single = 0x00000811,
+		GX2AF_32_32_32_32_UInt = 0x00000112,
+		GX2AF_32_32_32_32_SInt = 0x00000312,
+		GX2AF_32_32_32_32_Single = 0x00000813
+	} gx2AttribFormat;
+} VertexAttrib <bgcolor=0x95A7B8, read=VertexAttribRead>;
+
+// ---- FSHP ----
+
+typedef struct // Shape
+{
+	char signature[4]; // FSHP
+	NameOffset ofsName;
+	enum <uint> ShapeFlags
+	{
+		SF_None,
+		SF_HasVertexBuffer = 1 << 1
+	} flg;
+	ushort idx;
+	ushort idxMaterial;
+	ushort idxBone;
+	ushort idxVertexBuffer;
+	ushort numSkinBoneIndex;
+	byte vertexSkinCount;
+	byte numMesh;
+	byte numKeyShape;
+	byte numTargetAttrib;
+	ushort numBoundingNodes; // Padding in engine.
+	float radius;
+	Offset ofsVertexBuffer;
+	Offset ofsMeshList;
+	Offset ofsSkinBoneIndexList;
+	Offset ofsKeyShapeDict;
+	if (numBoundingNodes)
+	{
+		Offset ofsBoundingNodesList; // Nonexistent in engine.
+		Offset ofsBoundingList;
+		Offset ofsBoundingIndexList; // Nonexistent in engine.
+	}
+	else
+	{
+		Offset ofsBoundingList;
+	}
+	uint userPointer;
+	local uint pos <hidden=true> = FTell();
+	// Read vertex buffer.
+	FSeek(ofsVertexBuffer.target);
+	VertexBuffer vertexBuffer;
+	// Read meshes.
+	FSeek(ofsMeshList.target);
+	Mesh meshes[numMesh] <optimize=false>;
+	// Read skin bone index array.
+	if (ofsSkinBoneIndexList.value && numSkinBoneIndex)
+	{
+		FSeek(ofsSkinBoneIndexList.target);
+		ushort skinBoneIndices[numSkinBoneIndex];
+		FAlign(4);
+	}
+	// Read key shapes.
+	if (ofsKeyShapeDict.value)
+	{
+		FSeek(ofsKeyShapeDict.target);
+		Dict keyShapes(DT_KEY_SHAPE);
+	}
+	if (numBoundingNodes)
+	{
+		// Read sub mesh bounding nodes.
+		FSeek(ofsBoundingNodesList.target);
+		BoundingNode boundingNodes[numBoundingNodes] <optimize=false>;
+		// Read sub mesh boundings.
+		FSeek(ofsBoundingList.target);
+		Bounding boundings[numBoundingNodes] <optimize=true>;
+		// Read sub mesh bounding indices.
+		FSeek(ofsBoundingIndexList.target);
+		ushort boundingIndices[numBoundingNodes] <optimize=true>;
+		FAlign(4);
+	}
+	else
+	{
+		// Read sub mesh boundings.
+		FSeek(ofsBoundingList.target);
+		Bounding boundings[meshes[0].numSubMesh + 1] <optimize=true>;
+	}
+	FSeek(pos); // Seek back to header end.
+} Shape <bgcolor=0xCDCDFF, read=ShapeRead>;
+
+typedef struct // Mesh
+{
+	enum <uint> GX2PrimitiveType
+	{
+		GX2PT_Points = 0x01,
+		GX2PT_Lines = 0x02,
+		GX2PT_LineStrip = 0x03,
+		GX2PT_Triangles = 0x04,
+		GX2PT_TriangleFan = 0x05,
+		GX2PT_TriangleStrip = 0x06,
+		GX2PT_LinesAdjacency = 0x0A,
+		GX2PT_LineStripAdjacency = 0x0B,
+		GX2PT_TrianglesAdjacency = 0x0C,
+		GX2PT_TriangleStripAdjacency = 0x0D,
+		GX2PT_Rects = 0x11,
+		GX2PT_LineLoop = 0x12,
+		GX2PT_Quads = 0x13,
+		GX2PT_QuadStrip = 0x14,
+		GX2PT_TessellateLines = 0x82,
+		GX2PT_TessellateLineStrip = 0x83,
+		GX2PT_TessellateTriangles = 0x84,
+		GX2PT_TessellateTriangleStrip = 0x86,
+		GX2PT_TessellateQuads = 0x93,
+		GX2PT_TessellateQuadStrip = 0x94
+	} gx2PrimitiveType;
+	enum <uint> GX2IndexFormat
+	{
+		GX2IF_UInt16LE,
+		GX2IF_UInt32LE,
+		GX2IF_UInt16 = 4,
+		GX2IF_UInt32 = 9
+	} gx2IndexFormat;
+	uint count;
+	ushort numSubMesh;
+	ushort padding <fgcolor=0x808080, hidden=true>;
+	Offset ofsSubMeshList;
+	Offset ofsIndexBuffer;
+	uint offset;
+	local uint pos <hidden=true> = FTell();
+	// Read the sub meshes.
+	FSeek(ofsSubMeshList.target);
+	SubMesh subMeshes[numSubMesh] <optimize=false>;
+	// Read the index buffer.
+	FSeek(ofsIndexBuffer.target);
+	Buffer indexBuffer;
+	FSeek(pos); // Seek back to header end.
+} Mesh <bgcolor=0xBDBDEB>;
+
+typedef struct // SubMesh
+{
+	uint offset;
+	uint count;
+} SubMesh <bgcolor=0xAEAED9>;
+
+typedef struct // KeyShape
+{
+	ubyte targetAttribIndexPosition;
+	ubyte targetAttribIndexNormal;
+	ubyte targetAttribIndexTangent[4];
+	ubyte targetAttribIndexBinormal[4];
+	ubyte targetAttribColor[8];
+	ubyte padding[2] <fgcolor=0x808080, hidden=true>;
+	ubyte ofsTargetAttribIndex[4]; // Obsolete, was possibly an offset.
+} KeyShape <bgcolor=0xA1A1C8>;
+
+typedef struct // BoundingNode
+{
+	ushort idxLeft;
+	ushort idxRight;
+	ushort unknown0x04; // Same as idxLeft
+	ushort nextSibling;
+	ushort idxSubMesh;
+	ushort numSubMesh;
+} BoundingNode <bgcolor=0x9595B8>;
+
+typedef struct // Bounding
+{
+	Vector3F center;
+	Vector3F extent;
+} Bounding <bgcolor=0xAA8A8A>;
+
+// ---- FMAT ----
+
+typedef struct // Material
+{
+	char signature[4]; // FMAT
+	NameOffset ofsName;
+	enum <uint> MaterialFlags
+	{
+		MF_None,
+		MF_Visible
+	} flg;
+	ushort idx;
+	ushort numRenderInfo;
+	ubyte numSampler;
+	ubyte numTextureRef;
+	ushort numShaderParam;
+	ushort numShaderParamVolatile;
+	ushort sizSourceParamData;
+	ushort sizRawParamData;
+	ushort numUserData;
+	Offset ofsRenderInfoDict;
+	Offset ofsRenderState;
+	Offset ofsShaderAssign;
+	Offset ofsTextureRefList;
+	Offset ofsSamplerList;
+	Offset ofsSamplerDict;
+	Offset ofsShaderParamList;
+	Offset ofsShaderParamDict;
+	Offset ofsSourceParamData;
+	Offset ofsUserDataDict;
+	Offset ofsVolatileFlagList;
+	uint userPointer;
+	local uint pos <hidden=true> = FTell();
+	// Read render infos.
+	if (ofsRenderInfoDict.value)
+	{
+		FSeek(ofsRenderInfoDict.target);
+		Dict renderInfos(DT_RENDER_INFO);
+	}
+	// Read render state.
+	FSeek(ofsRenderState.target);
+	RenderState renderState;
+	// Read shader assign.
+	if (ofsShaderAssign.value)
+	{
+		FSeek(ofsShaderAssign.target);
+		ShaderAssign shaderAssign;
+	}
+	// Read texture references.
+	if (ofsTextureRefList.value)
+	{
+		FSeek(ofsTextureRefList.target);
+		TextureRef textureRefs[numTextureRef] <optimize=false>;
+	}
+	// Read sampler list and dict.
+	if (ofsSamplerList.value)
+	{
+		FSeek(ofsSamplerList.target);
+		Sampler samplers[numSampler] <optimize=false>;
+	}
+	if (ofsSamplerDict.value)
+	{
+		FSeek(ofsSamplerDict.target);
+		Dict samplerDict(DT_SAMPLER);
+	}
+	// Read shader param list (with values) and dict (without values).
+	if (ofsShaderParamList.value)
+	{
+		FSeek(ofsShaderParamList.target);
+		ShaderParam shaderParams(this)[numShaderParam] <optimize=false>;
+	}
+	if (ofsShaderParamDict.value)
+	{
+		FSeek(ofsShaderParamDict.target);
+		Dict shaderParamDict(DT_NONE);
+	}
+	// Read volatile flags.
+	if (ofsVolatileFlagList.value)
+	{
+		FSeek(ofsVolatileFlagList.target);
+		byte volatileFlags[Ceil(numShaderParam / 8.0)] <format=binary>; // Bitset
+		FAlign(4);
+	}
+	// Read user data.
+	if (ofsUserDataDict.value)
+	{
+		FSeek(ofsUserDataDict.target);
+		Dict userData(DT_USER_DATA);
+	}
+	FSeek(pos); // Seek back to header end.
+} Material <bgcolor=0xEFCDFF, read=MaterialRead>;
+
+typedef struct // RenderInfo
+{
+	ushort arrayLength;
+	enum <ubyte> RenderInfoType
+	{
+		RIT_Int32,
+		RIT_Single,
+		RIT_String
+	} type;
+	ubyte padding <fgcolor=0x808080, hidden=true>;
+	NameOffset ofsName;
+	switch (type)
+	{
+		// Weird 0-termination even for numerical values.
+		case RIT_Int32: int value[arrayLength]; uint padding <fgcolor=0x808080, hidden=true>; break;
+		case RIT_Single: float value[arrayLength]; uint padding <fgcolor=0x808080, hidden=true>; break;
+		case RIT_String: NameOffset value[arrayLength] <optimize=false>; break;
+	}
+} RenderInfo <bgcolor=0xDCBDEB, read=RenderInfoRead>;
+
+typedef struct // RenderState
+{
+	uint flags <format=binary>;
+	uint gx2PolygonControl <format=binary>;
+	uint gx2DepthStencilControl <format=binary>;
+	uint gx2AlphaTest <format=binary>;
+	float gx2AlphaTestReference;
+	uint gx2ColorControl <format=binary>;
+	uint gx2BlendControlTarget;
+	uint gx2BlendControl <format=binary>;
+	Vector4F gx2BlendConstantColor;
+} RenderState <bgcolor=0xCBAED9>;
+
+typedef struct // Sampler
+{
+	uint gx2SamplerRegs[3];
+	uint gx2SamplerHandle; // Set at runtime
+	NameOffset ofsName;
+	ubyte index;
+	ubyte padding[3] <fgcolor=0x808080, hidden=true>;
+} Sampler <bgcolor=0xAD95B8, read=SamplerRead>;
+
+typedef struct(Material &material) // ShaderParam
+{
+	enum <byte> MaterialType
+	{
+		MT_Bool, MT_Bool2, MT_Bool3, MT_Bool4,
+		MT_Int, MT_Int2, MT_Int3, MT_Int4,
+		MT_UInt, MT_UInt2, MT_UInt3, MT_UInt4,
+		MT_Float, MT_Float2, MT_Float3, MT_Float4,
+		MT_Reserved2, MT_Float2x2, MT_Float2x3, MT_Float2x4,
+		MT_Reserved3, MT_Float3x2, MT_Float3x3, MT_Float3x4,
+		MT_Reserved4, MT_Float4x2, MT_Float4x3, MT_Float4x4,
+		MT_Srt2D, MT_Srt3D, MT_TexSrt, MT_TexSrtEx
+	};
+	if (file.version >= 0x03030000)
+	{
+		MaterialType type;
+		byte size;
+		ushort sourceDataOffset;
+		int dataOffset; // Set at runtime.
+		uint callback; // Set at runtime.
+		ushort idxDepended;
+		ushort idxDepend;
+		NameOffset ofsName;
+	}
+	else
+	{
+		MaterialType type;
+		byte padding <fgcolor=0x808080>; // Only 0 seen.
+		ushort sourceDataOffset;
+		int dataOffset;
+		NameOffset ofsName;
+	}
+	local uint pos <hidden=true> = FTell();
+	// Read the value.
+	FSeek(material.ofsSourceParamData.target + sourceDataOffset);
+	switch (type)
+	{
+		case MT_Bool: byte value <fgcolor=cRed>; break;
+		case MT_Bool2: Vector2B value <fgcolor=cRed>; break;
+		case MT_Bool3: Vector3B value <fgcolor=cRed>; break;
+		case MT_Bool4: Vector4B value <fgcolor=cRed>; break;
+		case MT_Int: int value <fgcolor=cRed>; break;
+		case MT_Int2: Vector2 value <fgcolor=cRed>; break;
+		case MT_Int3: Vector3 value <fgcolor=cRed>; break;
+		case MT_Int4: Vector4 value <fgcolor=cRed>; break;
+		case MT_UInt: uint value <fgcolor=cRed>; break;
+		case MT_UInt2: Vector2U value <fgcolor=cRed>; break;
+		case MT_UInt3: Vector3U value <fgcolor=cRed>; break;
+		case MT_UInt4: Vector4U value <fgcolor=cRed>; break;
+		case MT_Float: float value <fgcolor=cRed>; break;
+		case MT_Float2: Vector2F value <fgcolor=cRed>; break;
+		case MT_Float3: Vector3F value <fgcolor=cRed>; break;
+		case MT_Float4: Vector4F value <fgcolor=cRed>; break;
+		case MT_Float2x2: Matrix2x2 value <fgcolor=cRed>; break;
+		case MT_Float2x3: Matrix2x3 value <fgcolor=cRed>; break;
+		case MT_Float2x4: Matrix2x4 value <fgcolor=cRed>; break;
+		case MT_Float3x2: Matrix3x2 value <fgcolor=cRed>; break;
+		case MT_Float3x3: Matrix3x3 value <fgcolor=cRed>; break;
+		case MT_Float3x4: Matrix3x4 value <fgcolor=cRed>; break;
+		case MT_Float4x2: Matrix4x2 value <fgcolor=cRed>; break;
+		case MT_Float4x3: Matrix4x3 value <fgcolor=cRed>; break;
+		case MT_Float4x4: Matrix4x4 value <fgcolor=cRed>; break;
+		case MT_Srt2D: Srt2D value <fgcolor=cRed>; break;
+		case MT_Srt3D: Srt3D value <fgcolor=cRed>; break;
+		case MT_TexSrt: TexSrt value <fgcolor=cRed>; break;
+		case MT_TexSrtEx: TexSrtEx value <fgcolor=cRed>; break;
+	}
+	FSeek(pos); // Seek back to header end.
+} ShaderParam <bgcolor=0xA08AAA, read=ShaderParamRead>;
+
+typedef struct // ShaderAssign
+{
+	NameOffset ofsShaderArchiveName;
+	NameOffset ofsShadingModelName;
+	uint revision;
+	ubyte numAttribAssign;
+	ubyte numSamplerAssign;
+	ushort numShaderOption;
+	Offset ofsAttribAssignDict;
+	Offset ofsSamplerAssignDict;
+	Offset ofsShaderOptionDict;
+	local uint pos <hidden=true> = FTell();
+	// Read attrib assigns.
+	FSeek(ofsAttribAssignDict.target);
+	Dict attribAssigns(DT_STRING);
+	// Read sampler assigns.
+	if (ofsSamplerAssignDict.value)
+	{
+		FSeek(ofsSamplerAssignDict.target);
+		Dict samplerAssigns(DT_STRING);
+	}
+	// Read shader options.
+	if (ofsShaderOptionDict.value)
+	{
+		FSeek(ofsShaderOptionDict.target);
+		Dict shaderOptions(DT_STRING);
+	}
+	FSeek(pos); // Seek back to header end.
+} ShaderAssign <bgcolor=0x947F9D>;
+
+// ==== Template Methods ===============================================================================================
+
+string BoneRead(Bone &bone)
+{
+	return bone.ofsName.name;
+}
+
+string RenderInfoRead(RenderInfo &renderInfo)
+{
+	string s;
+	switch (renderInfo.type)
+	{
+		case 0: SPrintf(s, "%s = %d", renderInfo.ofsName.name, renderInfo.value[0]); break;
+		case 1: SPrintf(s, "%s = %f", renderInfo.ofsName.name, renderInfo.value[0]); break;
+		case 2: SPrintf(s, "%s = \"%s\"", renderInfo.ofsName.name, renderInfo.value[0].name); break;
+	}
+	return s;
+}
+
+string MaterialRead(Material &material)
+{
+	return material.ofsName.name;
+}
+
+string ModelRead(Model &model)
+{
+	return model.ofsName.name;
+}
+
+string SamplerRead(Sampler &sampler)
+{
+	return sampler.ofsName.name;
+}
+
+string ShaderParamRead(ShaderParam &shaderParam)
+{
+	string s;
+	switch (shaderParam.type)
+	{
+		case 0: SPrintf(s, "%s = %u", shaderParam.ofsName.name, shaderParam.value); break;
+		case 1: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector2BRead(shaderParam.value)); break;
+		case 2: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector3BRead(shaderParam.value)); break;
+		case 3: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector4BRead(shaderParam.value)); break;
+		case 4: SPrintf(s, "%s = %d", shaderParam.ofsName.name, shaderParam.value); break;
+		case 5: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector2Read(shaderParam.value)); break;
+		case 6: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector3Read(shaderParam.value)); break;
+		case 7: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector4Read(shaderParam.value)); break;
+		case 8: SPrintf(s, "%s = %u", shaderParam.ofsName.name, shaderParam.value); break;
+		case 9: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector2URead(shaderParam.value)); break;
+		case 10: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector3URead(shaderParam.value)); break;
+		case 11: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector4URead(shaderParam.value)); break;
+		case 12: SPrintf(s, "%s = %f", shaderParam.ofsName.name, shaderParam.value); break;
+		case 13: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector2FRead(shaderParam.value)); break;
+		case 14: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector3FRead(shaderParam.value)); break;
+		case 15: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Vector4FRead(shaderParam.value)); break;
+		case 17: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix2x2Read(shaderParam.value)); break;
+		case 18: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix2x3Read(shaderParam.value)); break;
+		case 19: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix2x4Read(shaderParam.value)); break;
+		case 21: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix3x2Read(shaderParam.value)); break;
+		case 22: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix3x3Read(shaderParam.value)); break;
+		case 23: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix3x4Read(shaderParam.value)); break;
+		case 25: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix4x2Read(shaderParam.value)); break;
+		case 26: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix4x3Read(shaderParam.value)); break;
+		case 27: SPrintf(s, "%s = %s", shaderParam.ofsName.name, Matrix4x4Read(shaderParam.value)); break;
+		case 28: SPrintf(s, "%s = 2D SRT", shaderParam.ofsName.name); break;
+		case 29: SPrintf(s, "%s = 3D SRT", shaderParam.ofsName.name); break;
+		case 30: SPrintf(s, "%s = Texture SRT", shaderParam.ofsName.name); break;
+		case 31: SPrintf(s, "%s = Texture SRT multiplied", shaderParam.ofsName.name); break;
+	}
+	return s;
+}
+
+string ShapeRead(Shape &shape)
+{
+	return shape.ofsName.name;
+}
+
+string VertexAttribRead(VertexAttrib &vertexAttrib)
+{
+	return vertexAttrib.ofsName.name;
+}

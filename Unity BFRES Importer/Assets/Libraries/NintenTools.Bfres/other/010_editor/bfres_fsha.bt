@@ -1,0 +1,89 @@
+// ==== Structures =====================================================================================================
+
+typedef struct // ShapeAnim
+{
+	char signature[4]; // FSHA
+	NameOffset ofsName;
+	NameOffset ofsPath;
+	enum <ushort> ShapeAnimFlags
+	{
+		SHAF_None,
+		SHAF_CurveBaked = 1 << 0,
+		SHAF_IsLooping = 1 << 2
+	} flg : 3;
+	ushort numUserData;
+	int numFrame;
+	ushort numVertexShapeAnim;
+	ushort numKeyShapeAnim;
+	ushort numCurve;
+	ushort padding <fgcolor=0x808080, hidden=true>;
+	uint sizBaked;
+	Offset ofsModel; // Points to FMDL
+	Offset ofsBindIndexList;
+	Offset ofsVertexShapeAnimList;
+	Offset ofsUserDataDict;
+	// Read bind indices.
+	FSeek(ofsBindIndexList.target);
+	ushort bindIndices[numVertexShapeAnim] <optimize=true>;
+	FAlign(4);
+	// Read vertex shape animations.
+	FSeek(ofsVertexShapeAnimList.target);
+	VertexShapeAnim vertexShapeAnims[numVertexShapeAnim] <optimize=false>;
+	// Read user data.
+	if (ofsUserDataDict.value)
+	{
+		FSeek(ofsUserDataDict.target);
+		Dict userData(DT_USER_DATA);
+	}
+} ShapeAnim <bgcolor=0xE9E9E9>;
+
+typedef struct // VertexShapeAnim
+{
+	ushort numCurve;
+	ushort numKeyShapeAnim;
+	int beginCurve;
+	int beginKeyShapeAnim;
+	NameOffset ofsName;
+	Offset ofsKeyShapeAnimInfoList;
+	Offset ofsCurveList;
+	Offset ofsBaseValue;
+	local uint pos <hidden=true> = FTell();
+	// Read key shape animation infos.
+	FSeek(ofsKeyShapeAnimInfoList.target);
+	KeyShapeAnimInfo keyShapeAnimInfos[numKeyShapeAnim] <optimize=false>;
+	// Read animation curves.
+	if (numCurve)
+	{
+		FSeek(ofsCurveList.target);
+		AnimCurve animCurves[numCurve] <optimize=false>;
+	}
+	// Read base values.
+	FSeek(ofsBaseValue.target);
+	float baseValues[numKeyShapeAnim - 1] <bgcolor=0xA1C8A1, optimize=true>; // Ignore base shape.
+	FSeek(pos); // Seek back to header end.
+} VertexShapeAnim <bgcolor=0xBDEBBD, read=VertexShapeAnimRead>;
+
+typedef struct // KeyShapeAnimInfo
+{
+	byte idxCurve;
+	byte idxSubBind;
+	ushort padding <fgcolor=0x808080, hidden=true>;
+	NameOffset ofsName;
+} KeyShapeAnimInfo <bgcolor=0xAED9AE, read=KeyShapeAnimInfoRead>;
+
+// ==== Template Methods ===============================================================================================
+
+string KeyShapeAnimInfoRead(KeyShapeAnimInfo &keyShapeAnimInfo)
+{
+	return keyShapeAnimInfo.ofsName.name;
+}
+
+string ShapeAnimRead(ShapeAnim &shapeAnim)
+{
+	return shapeAnim.ofsName.name;
+}
+
+string VertexShapeAnimRead(VertexShapeAnim &vertexShapeAnim)
+{
+	return vertexShapeAnim.ofsName.name;
+}

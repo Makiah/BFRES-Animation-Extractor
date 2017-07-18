@@ -1,0 +1,40 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Script File
+//
+//      File: BFRES_GetOffsets.1sc
+//   Authors: Syroot
+//   Version: 0.1.0
+//   Purpose: Creates bookmarks at positions being a BFRES offset pointing to a specific address.
+//  Category: Wii U
+//   History:
+// 	1.0.0	2017-05-29	Initial version.
+//------------------------------------------------
+
+RequiresFile();
+BigEndian();
+
+int64 target = GetCursorPos();
+int foundCount = 0;
+int64 pos = 0;
+int value;
+string bookmarkName;
+while (pos < FileSize())
+{
+	value = ReadInt(pos);
+	if (pos + value == target)
+	{
+		foundCount++;
+		SPrintf(bookmarkName, "to %Xh", target);
+		AddBookmark(pos, bookmarkName, "Offset");
+		//Printf("Offset to %Xh found at %Xh.\n", target, pos);
+	}
+	pos += sizeof(uint);
+}
+if (foundCount == 0)
+{
+	Warning("No offsets found.");
+}
+else
+{
+	StatusMessage("%d offsets found.", foundCount);
+}

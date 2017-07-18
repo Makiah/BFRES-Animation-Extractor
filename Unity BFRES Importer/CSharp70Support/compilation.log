@@ -1,0 +1,73 @@
+********************************************************************************
+*                      Tuesday, July 18, 2017 6:14:28 PM                       *
+********************************************************************************
+********************************************************************************
+*                      Tuesday, July 18, 2017 6:14:28 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.1.0.47
+Platform: Mac
+Platform: Mac
+Target assembly: Assembly-CSharp.dll
+Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
+Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Target assembly: Assembly-CSharp-Editor-firstpass.dll
+Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
+Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-c7e779030c5f4450884c776a507fb206 -debug:portable
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-629d58f4b886f4aa79a2288951a18d90 -debug:portable
+Exit code: 1
+Elapsed time: 3.67 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (2 lines):
+0: Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Script/Program.cs(4,17): error CS0234: The type or namespace name 'CodeAnalysis' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?)
+1: Assets/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres.Script/Program.cs(5,17): error CS0234: The type or namespace name 'CodeAnalysis' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?)
+Exit code: 0
+Elapsed time: 4.62 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (0 lines):
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+File "Temp/Assembly-CSharp-Editor-firstpass.pdb" deleted
+********************************************************************************
+*                      Tuesday, July 18, 2017 6:17:03 PM                       *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.1.0.47
+Platform: Mac
+Target assembly: Assembly-CSharp.dll
+Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
+Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-76a17a5274b9c48d481592c636125a86 -debug:portable
+Exit code: 0
+Elapsed time: 4.84 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (1 line):
+0: Assets/Libraries/BinaryData/src/Syroot.BinaryData.Test/Program.cs(29,20): warning CS0649: Field 'TestObjectBase.w' is never assigned to, and will always have its default value 0
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+File "Temp/Assembly-CSharp.pdb" deleted

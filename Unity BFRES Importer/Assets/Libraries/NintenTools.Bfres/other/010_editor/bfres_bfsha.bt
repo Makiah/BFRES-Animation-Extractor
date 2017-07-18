@@ -1,0 +1,240 @@
+// ==== Structures =====================================================================================================
+
+typedef struct // ShaderArchive
+{
+	char signature[4]; // FSHA
+	uint version <format=hex, read=VersionRead>;
+	ushort byteOrder <format=hex>;
+	ushort headerSize <format=hex>; // Only up to alignment.
+	uint fileSize;
+	uint alignment <format=hex>;
+	NameOffset ofsName;
+	uint stringPoolSize;
+	Offset stringPoolOffset;
+	NameOffset ofsPath;
+	ushort shadingModel;
+	ushort flags <format=binary>;
+	uint abiVersion;
+	Offset shadingModelDictOffset;
+	uint userPointer;
+	uint updateCallback; // Set at runtime.
+	// Read shading models.
+	FSeek(shadingModelDictOffset.target);
+	Dict shadingModelDict(DT_SHADING_MODEL);
+} ShaderArchive <bgcolor=0xD6D6D6, read=ShaderArchiveRead>;
+
+typedef struct // ShadingModel
+{
+	ubyte staticKeyLength;
+	ubyte dynamicKeyLength;
+	ushort staticOptionCount;
+	ushort dynamicOptionCount;
+	ushort shaderProgramCount;
+	ubyte attribCount;
+	ubyte samplerCount;
+	ubyte uniformBlockCount;
+	ubyte maxVSRingItem;
+	ushort maxGSRingItem;
+	ushort padding <fgcolor=0x808080, hidden=true>;
+	ubyte maxGPRs[4];
+	//ubyte maxStackEntries[4]; TODO: Here is uniformCount. Validate if layout changed.
+	int uniformCount;
+	byte systemBlockIndices[4];
+	int defaultProgramIndex;
+	NameOffset ofsName;
+	ubyte maxStackEntries[4]; // Moved here for now.
+	uint revision;
+	Offset staticOptionArrayOffset;
+	Offset staticOptionDictOffset;
+	Offset dynamicOptionArrayOffset;
+	Offset dynamicOptionDictOffset;
+	Offset attribArrayOffset;
+	Offset attribDictOffset;
+	Offset samplerArrayOffset;
+	Offset samplerDictOffset;
+	Offset uniformBlockArrayOffset;
+	Offset uniformBlockDictOffset;
+	Offset uniformArrayOffset;
+	Offset shaderProgramArrayOffset;
+	Offset keyTableOffset;
+	Offset shaderArchiveOffset; // Points to FSHA.
+	uint userPointer;
+	uint updateCallback; // Set at runtime.
+	Offset glShaderInfoOffset;
+	// Read static and dynamic shader options.
+	FSeek(staticOptionDictOffset.target);
+	Dict staticOptionDict(DT_SHADER_OPTION);
+	FSeek(dynamicOptionDictOffset.target);
+	Dict dynamicOptionDict(DT_SHADER_OPTION);
+	// Read attrib variables.
+	FSeek(attribDictOffset.target);
+	Dict attribDict(DT_ATTRIB_VAR);
+	// Read sampler variables.
+	FSeek(samplerDictOffset.target);
+	Dict samplerDict(DT_SAMPLER_VAR);
+	// Read uniform block variables.
+	FSeek(uniformBlockDictOffset.target);
+	Dict uniformBlockDict(DT_UNIFORM_BLOCK_VAR);
+	// Read uniform variables.
+	FSeek(uniformArrayOffset.target);
+	UniformVar uniforms[uniformCount] <optimize=false>;
+	// Read shader programs.
+	FSeek(shaderProgramArrayOffset.target);
+	ShaderProgram shaderPrograms[shaderProgramCount] <optimize=false>;
+	// Read GL shader info.
+	FSeek(glShaderInfoOffset.target);
+	GLShaderInfo glShaderInfo;
+} ShadingModel <bgcolor=0xC6C6C6, read=ShadingModelRead>;
+
+typedef struct // ShaderOption
+{
+	ubyte choiceCount;
+	ubyte defaultIndex;
+	ushort branchOffset; // Uniform block offset.
+	ubyte flags <format=binary>;
+	ubyte keyOffset;
+	ubyte bit32Index;
+	ubyte bit32Shift;
+	uint bit32Mask;
+	NameOffset ofsName;
+	Offset choiceDictOffset;
+	Offset choiceValuesOffset;
+	// Read choices.
+	FSeek(choiceDictOffset.target);
+	Dict choiceDict(DT_NONE);
+} ShaderOption <bgcolor=0xB6B6B6, read=ShaderOptionRead>;
+
+typedef struct // AttribVar
+{
+	ubyte index;
+	ubyte gx2VarType;
+	ubyte arrayLength;
+	byte location;
+} AttribVar <bgcolor=0xA8A8A8>;
+
+typedef struct // SamplerVar
+{
+	ubyte index;
+	ubyte gx2VarType;
+	ubyte arrayLength;
+	ubyte padding <fgcolor=0x808080, hidden=true>;
+	NameOffset altNameOffset;
+} SamplerVar <bgcolor=0xA8A8A8, read=SamplerVarRead>;
+
+typedef struct // UniformBlockVar
+{
+	ubyte index;
+	ubyte type;
+	ushort size;
+	ushort uniformCount;
+	ushort padding <fgcolor=0x808080, hidden=true>;
+	Offset uniformDictOffset;
+	Offset defaultOffset; // Set when type is MATERIAL.
+	// Do not read uniform variables again (read in array in ShadingModel).
+} UniformBlockVar <bgcolor=0xA8A8A8>;
+
+typedef struct // UniformVar
+{
+	int index;
+	ushort arrayLength;
+	ubyte gx2VarType;
+	ubyte blockIndex;
+	ushort offset;
+	ubyte shaderParamType;
+	ubyte padding <fgcolor=0x808080, hidden=true>;
+	NameOffset converterNameOffset;
+} UniformVar <bgcolor=0xA8A8A8>;
+
+typedef struct // GLShaderInfo
+{
+	uint streamoutCount;
+	Offset samplerTableOffset;
+	Offset blockTableOffset;
+	Offset streamoutOffset;
+	GLShaderInfoSharedSource sharedSources[4];
+} GLShaderInfo <bgcolor=0x9C9C9C>;
+
+typedef struct // GLShaderInfoSharedSource
+{
+	uint sharedSourceSize;
+	uint sharedSourceCompressedSize;
+	Offset sharedSourceCompressedOffset;
+	uint sharedSourcePointer; // Set at runtime
+} GLShaderInfoSharedSource <bgcolor=0x909090>;
+
+// --- Shader Program ----
+
+typedef struct // ShaderProgram
+{
+	ushort flags <format=binary>;
+	ubyte samplerCount;
+	ubyte uniformBlockCount;
+	uint attribActiveFlag <format=binary>;
+	ushort aluInstructionCount[4];
+	ushort tFetchInstructionCount[4];
+	ushort vFetchInstructionCount[4];
+	ushort cFlowInstructionCount[4];
+	uint handle; // Set at runtime.
+	Offset samplerTableOffset;
+	Offset uniformBlockTableOffset;
+	Offset vertexShaderOffset;
+	Offset geometryShaderOffset;
+	Offset geometryCopyShaderOffset;
+	Offset fragmentShaderOffset;
+	Offset computeShaderOffset;
+	Offset shadingModelOffset; // Points to ShadingModel.
+	// Read sampler table.
+	FSeek(samplerTableOffset.target);
+	Vector3B samplerTable[samplerCount] <bgcolor=0x292929, fgcolor=cWhite>;
+	// Read uniform block table.
+	FSeek(uniformBlockTableOffset.target);
+	Vector3B uniformBlockTable[uniformBlockCount] <bgcolor=0x393939, fgcolor=cWhite>;
+	// Read vertex shader.
+	FSeek(vertexShaderOffset.target);
+	OfflineShader vertexShader <bgcolor=0x494949, fgcolor=cWhite>;
+	// Read geometry and geometry copy shader.
+	FSeek(geometryShaderOffset.target);
+	OfflineShader geometryShader <bgcolor=0x575757, fgcolor=cWhite>;
+	FSeek(geometryCopyShaderOffset.target);
+	OfflineShader geometryCopyShader <bgcolor=0x575757, fgcolor=cWhite>;
+	// Read fragment shader.
+	FSeek(fragmentShaderOffset.target);
+	OfflineShader fragmentShader <bgcolor=0x636363, fgcolor=cWhite>;
+	// Read compute shader.
+	FSeek(computeShaderOffset.target);
+	OfflineShader computeShader <bgcolor=0x6F6F6F, fgcolor=cWhite>;
+} ShaderProgram <bgcolor=0x161616, fgcolor=cWhite>;
+
+typedef struct // OfflineShader
+{
+	ubyte gx2PatchType;
+	ubyte gx2ShaderMode;
+	ushort padding <fgcolor=0x808080, hidden=true>;
+	uint byteOffset;
+	uint shaderSize;
+	uint offlineSize;
+	Offset shaderOffset;
+	Offset offlineOffset;
+} OfflineShader;
+
+// ==== Template Methods ===============================================================================================
+
+string SamplerVarRead(SamplerVar &samplerVar)
+{
+	return samplerVar.altNameOffset.name;
+}
+
+string ShaderArchiveRead(ShaderArchive &shaderArchive)
+{
+	return shaderArchive.ofsName.name;
+}
+
+string ShadingModelRead(ShadingModel &shadingModel)
+{
+	return shadingModel.ofsName.name;
+}
+
+string ShaderOptionRead(ShaderOption &shaderOption)
+{
+	return shaderOption.ofsName.name;
+}
