@@ -15,13 +15,17 @@
       <file leaf-file-name="Importer.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Importer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="251">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <marker date="1500416917000" expanded="true" signature="6:109" ph="..." />
-                <marker date="1500416917000" expanded="true" signature="149:435" ph="{...}" />
-                <marker date="1500416917000" expanded="true" signature="198:369" ph="{...}" />
-                <marker date="1500416917000" expanded="true" signature="424:433" ph="{...}" />
+                <marker date="1500417765000" expanded="true" signature="6:172" ph="..." />
+                <marker date="1500417765000" expanded="true" signature="211:1315" ph="{...}" />
+                <marker date="1500417765000" expanded="true" signature="261:1313" ph="{...}" />
+                <marker date="1500417765000" expanded="true" signature="640:702" ph="{...}" />
+                <marker date="1500417765000" expanded="true" signature="785:910" ph="{...}" />
+                <marker date="1500417765000" expanded="true" signature="917:987" ph="{...}" />
+                <marker date="1500417765000" expanded="true" signature="1064:1112" ph="{...}" />
+                <marker date="1500417765000" expanded="true" signature="1134:1249" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -938,13 +942,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Importer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="251">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <marker date="1500416917000" expanded="true" signature="6:109" ph="..." />
-            <marker date="1500416917000" expanded="true" signature="149:435" ph="{...}" />
-            <marker date="1500416917000" expanded="true" signature="198:369" ph="{...}" />
-            <marker date="1500416917000" expanded="true" signature="424:433" ph="{...}" />
+            <marker date="1500417765000" expanded="true" signature="6:172" ph="..." />
+            <marker date="1500417765000" expanded="true" signature="211:1315" ph="{...}" />
+            <marker date="1500417765000" expanded="true" signature="261:1313" ph="{...}" />
+            <marker date="1500417765000" expanded="true" signature="640:702" ph="{...}" />
+            <marker date="1500417765000" expanded="true" signature="785:910" ph="{...}" />
+            <marker date="1500417765000" expanded="true" signature="917:987" ph="{...}" />
+            <marker date="1500417765000" expanded="true" signature="1064:1112" ph="{...}" />
+            <marker date="1500417765000" expanded="true" signature="1134:1249" ph="{...}" />
           </folding>
         </state>
       </provider>
