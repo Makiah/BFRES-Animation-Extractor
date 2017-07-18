@@ -36,4 +36,7 @@ sysinfo.txt
 # Prevent Nintendo from freaking out if I accidentally upload a model file.  
 *.sbfres
 *.bfres
+*.sbfres.meta
+*.bfres.meta
 *.rarc
+*.rarc.meta
