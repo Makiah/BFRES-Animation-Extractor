@@ -61,9 +61,9 @@ public class BFRESLoader : MonoBehaviour
 		{
 			Debug.Log("Now loading " + model.Name);
 			var modelParent = new GameObject(model.Name).transform;
-			
+
+			//Set up skeleton.  
 			var boneReferences = new List<Transform>();
-			
 			foreach (var bone in model.Skeleton.Bones.Values)
 			{
 				//Set bone properties.  
@@ -78,6 +78,30 @@ public class BFRESLoader : MonoBehaviour
 				instantiatedBone.localPosition = Syroot2Unity.toUnityVector(bone.Position);
 				instantiatedBone.localRotation = Syroot2Unity.toUnityQuaternion(bone.Rotation);
 				instantiatedBone.localScale = Syroot2Unity.toUnityVector(bone.Scale);
+			}
+			
+			//Set up renderers.  
+			foreach (Shape shape in model.Shapes.Values)
+			{
+				//Set up the shape.  
+				var currentShape = new GameObject(shape.Name);
+				currentShape.transform.SetParent(modelParent);
+				currentShape.transform.localPosition = Vector3.zero;
+				currentShape.transform.localRotation = Quaternion.identity;
+				currentShape.transform.localScale = Vector3.one;
+
+				//Will display the item and deform based on skeleton.  
+				currentShape.AddComponent<SkinnedMeshRenderer>();
+				var smr = currentShape.GetComponent<SkinnedMeshRenderer>();
+				
+				//Create new mesh (not currently functional)
+//				Vector3[] newVertices = null;
+//				Vector2[] newUV = null;
+//				int[] newTriangles = null;
+//				var mesh = new UnityEngine.Mesh();
+//				mesh.vertices = newVertices;
+//				mesh.uv = newUV;
+//				mesh.triangles = newTriangles;
 			}
 		}
 	}

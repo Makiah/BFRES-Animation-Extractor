@@ -12,6 +12,6 @@ public class Syroot2Unity : MonoBehaviour
 
     public static Quaternion toUnityQuaternion(Vector4F rotation)
     {
-        return new Quaternion(rotation.X, rotation.Y, rotation.Z, rotation.W);
+        return Quaternion.Inverse(new Quaternion(rotation.X, rotation.Y, rotation.Z, rotation.W));
     }
 }

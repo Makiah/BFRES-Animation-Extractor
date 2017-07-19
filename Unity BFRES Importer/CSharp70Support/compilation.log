@@ -1,5 +1,5 @@
 ********************************************************************************
-*                      Tuesday, July 18, 2017 8:09:34 PM                       *
+*                      Tuesday, July 18, 2017 10:40:58 PM                      *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.1.0.47
 Platform: Mac
@@ -12,63 +12,9 @@ Compiler: Microsoft C# 7.0
 - Compilation -----------------------------------------------
 
 Process: /Library/Frameworks/Mono.framework/Commands/mono
-Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-4f7fc12721ea5451e8eb1791e70ee747 -debug:portable
+Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-15455fd282683475db50f2860ecbb4ff -debug:portable
 Exit code: 0
-Elapsed time: 4.80 sec
-
-- Compiler output (0 lines):
-
-- Compiler errors (2 lines):
-0: Assets/Scripts/BFRESLoader.cs(13,34): warning CS0649: Field 'BFRESLoader.sbfresToLoad' is never assigned to, and will always have its default value null
-1: Assets/Scripts/Libraries/BinaryData/src/Syroot.BinaryData.Test/Program.cs(29,20): warning CS0649: Field 'TestObjectBase.w' is never assigned to, and will always have its default value 0
-
-PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
-Debugging and line numbers in stack traces won't be available.
-File "Temp/Assembly-CSharp.pdb" deleted
-********************************************************************************
-*                      Tuesday, July 18, 2017 8:10:21 PM                       *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 2.1.0.47
-Platform: Mac
-Target assembly: Assembly-CSharp.dll
-Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
-Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
-Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
-Compiler: Microsoft C# 7.0
-
-- Compilation -----------------------------------------------
-
-Process: /Library/Frameworks/Mono.framework/Commands/mono
-Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-8a5c003525ac649bbb1a9d09c592f943 -debug:portable
-Exit code: 0
-Elapsed time: 4.81 sec
-
-- Compiler output (0 lines):
-
-- Compiler errors (2 lines):
-0: Assets/Scripts/BFRESLoader.cs(13,34): warning CS0649: Field 'BFRESLoader.sbfresToLoad' is never assigned to, and will always have its default value null
-1: Assets/Scripts/Libraries/BinaryData/src/Syroot.BinaryData.Test/Program.cs(29,20): warning CS0649: Field 'TestObjectBase.w' is never assigned to, and will always have its default value 0
-
-PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
-Debugging and line numbers in stack traces won't be available.
-File "Temp/Assembly-CSharp.pdb" deleted
-********************************************************************************
-*                      Tuesday, July 18, 2017 8:11:47 PM                       *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 2.1.0.47
-Platform: Mac
-Target assembly: Assembly-CSharp.dll
-Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
-Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
-Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
-Compiler: Microsoft C# 7.0
-
-- Compilation -----------------------------------------------
-
-Process: /Library/Frameworks/Mono.framework/Commands/mono
-Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-cab47769ded8c4f82914a682ffb5d59f -debug:portable
-Exit code: 0
-Elapsed time: 4.31 sec
+Elapsed time: 4.83 sec
 
 - Compiler output (0 lines):
 
@@ -80,7 +26,7 @@ PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
 Debugging and line numbers in stack traces won't be available.
 File "Temp/Assembly-CSharp.pdb" deleted
 ********************************************************************************
-*                      Tuesday, July 18, 2017 8:13:03 PM                       *
+*                      Tuesday, July 18, 2017 10:41:11 PM                      *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.1.0.47
 Platform: Mac
@@ -93,90 +39,9 @@ Compiler: Microsoft C# 7.0
 - Compilation -----------------------------------------------
 
 Process: /Library/Frameworks/Mono.framework/Commands/mono
-Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-e5f0c1066485041bebc02f80f95ae247 -debug:portable
+Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-fca8ca2b437ba4245983af0e32e2ef58 -debug:portable
 Exit code: 0
-Elapsed time: 4.30 sec
-
-- Compiler output (0 lines):
-
-- Compiler errors (2 lines):
-0: Assets/Scripts/BFRESLoader.cs(13,34): warning CS0649: Field 'BFRESLoader.sbfresToLoad' is never assigned to, and will always have its default value null
-1: Assets/Scripts/Libraries/BinaryData/src/Syroot.BinaryData.Test/Program.cs(29,20): warning CS0649: Field 'TestObjectBase.w' is never assigned to, and will always have its default value 0
-
-PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
-Debugging and line numbers in stack traces won't be available.
-File "Temp/Assembly-CSharp.pdb" deleted
-********************************************************************************
-*                      Tuesday, July 18, 2017 8:13:21 PM                       *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 2.1.0.47
-Platform: Mac
-Target assembly: Assembly-CSharp.dll
-Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
-Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
-Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
-Compiler: Microsoft C# 7.0
-
-- Compilation -----------------------------------------------
-
-Process: /Library/Frameworks/Mono.framework/Commands/mono
-Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-502b7a0b2fa7d418d92a7585638c13ef -debug:portable
-Exit code: 0
-Elapsed time: 4.27 sec
-
-- Compiler output (0 lines):
-
-- Compiler errors (2 lines):
-0: Assets/Scripts/BFRESLoader.cs(13,34): warning CS0649: Field 'BFRESLoader.sbfresToLoad' is never assigned to, and will always have its default value null
-1: Assets/Scripts/Libraries/BinaryData/src/Syroot.BinaryData.Test/Program.cs(29,20): warning CS0649: Field 'TestObjectBase.w' is never assigned to, and will always have its default value 0
-
-PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
-Debugging and line numbers in stack traces won't be available.
-File "Temp/Assembly-CSharp.pdb" deleted
-********************************************************************************
-*                      Tuesday, July 18, 2017 8:15:54 PM                       *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 2.1.0.47
-Platform: Mac
-Target assembly: Assembly-CSharp.dll
-Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
-Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
-Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
-Compiler: Microsoft C# 7.0
-
-- Compilation -----------------------------------------------
-
-Process: /Library/Frameworks/Mono.framework/Commands/mono
-Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-e8d4c487d76544a7e8c2fbb38e1e77fd -debug:portable
-Exit code: 0
-Elapsed time: 5.37 sec
-
-- Compiler output (0 lines):
-
-- Compiler errors (2 lines):
-0: Assets/Scripts/BFRESLoader.cs(13,34): warning CS0649: Field 'BFRESLoader.sbfresToLoad' is never assigned to, and will always have its default value null
-1: Assets/Scripts/Libraries/BinaryData/src/Syroot.BinaryData.Test/Program.cs(29,20): warning CS0649: Field 'TestObjectBase.w' is never assigned to, and will always have its default value 0
-
-PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
-Debugging and line numbers in stack traces won't be available.
-File "Temp/Assembly-CSharp.pdb" deleted
-********************************************************************************
-*                      Tuesday, July 18, 2017 8:17:41 PM                       *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 2.1.0.47
-Platform: Mac
-Target assembly: Assembly-CSharp.dll
-Project directory: /Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer
-Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
-Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
-Compiler: Microsoft C# 7.0
-
-- Compilation -----------------------------------------------
-
-Process: /Library/Frameworks/Mono.framework/Commands/mono
-Arguments: "/Users/makiah/Desktop/BOTW/Unity BFRES Importer/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-21b6d21ac0e894f4e8370f8c1514d6b1 -debug:portable
-Exit code: 0
-Elapsed time: 4.79 sec
+Elapsed time: 4.29 sec
 
 - Compiler output (0 lines):
 

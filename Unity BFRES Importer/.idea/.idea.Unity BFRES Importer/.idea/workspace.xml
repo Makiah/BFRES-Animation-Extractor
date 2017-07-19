@@ -15,23 +15,113 @@
       <file leaf-file-name="BFRESLoader.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BFRESLoader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+            <state relative-caret-position="379">
+              <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
               <folding>
-                <marker date="1500423458000" expanded="false" signature="6:210" ph="..." />
-                <marker date="1500423458000" expanded="true" signature="252:2402" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="325:349" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="412:2400" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="833:896" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="979:1104" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="1111:1181" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="1258:1306" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="1328:1443" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="1599:2397" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="1813:2393" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="2491:2689" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="2532:2687" ph="{...}" />
-                <marker date="1500423458000" expanded="true" signature="2648:2684" ph="{...}" />
+                <marker date="1500432066000" expanded="false" signature="6:210" ph="..." />
+                <marker date="1500432066000" expanded="true" signature="252:3276" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="325:349" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="412:3274" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="833:896" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="979:1104" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="1111:1181" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="1258:1306" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="1328:1443" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="1599:3271" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="1830:2410" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="2487:3267" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="2983:3262" ph="/* Create new mesh (not currently functional) ... */" />
+                <marker date="1500432066000" expanded="true" signature="3365:3563" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="3406:3561" ph="{...}" />
+                <marker date="1500432066000" expanded="true" signature="3522:3558" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shape.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/Shape/Shape.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="85" column="57" lean-forward="false" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
+              <folding>
+                <marker date="1499245114000" expanded="false" signature="6:110" ph="..." />
+                <marker date="1499245114000" expanded="true" signature="146:7342" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="153:254" ph="/// Represents an FSHP section in a &lt;see cref=&quot;Model&quot;/&gt; subfile. ... " />
+                <marker date="1499245114000" expanded="true" signature="353:6874" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="671:847" ph="/// Gets or sets the name with which the instance can be referenced uniquely in &lt;see cref=&quot;ResDict{Shape}&quot;/&gt; ... " />
+                <marker date="1499245114000" expanded="true" signature="898:1020" ph="/// Gets or sets flags determining which data is available for this instance. ... " />
+                <marker date="1499245114000" expanded="true" signature="1076:1256" ph="/// Gets or sets the index of the material to apply to the shapes surface in the owning ... " />
+                <marker date="1499245114000" expanded="true" signature="1316:1575" ph="/// Gets or sets the index of the &lt;see cref=&quot;Bone&quot;/&gt; to which this instance is directly attached to. The bone ... " />
+                <marker date="1499245114000" expanded="true" signature="1631:1802" ph="/// Gets or sets the index of the &lt;see cref=&quot;VertexBuffer&quot;/&gt; in the owning &lt;see cref=&quot;Model.VertexBuffers&quot;/&gt; ... " />
+                <marker date="1499245114000" expanded="true" signature="1866:1967" ph="/// Gets or sets the bounding radius spanning the shape. ... " />
+                <marker date="1499245114000" expanded="true" signature="2019:2260" ph="/// Gets or sets the number of bones influencing the vertices stored in this buffer. 0 influences equal ... " />
+                <marker date="1499245114000" expanded="true" signature="2320:2411" ph="/// Gets or sets a value with unknown purpose. ... " />
+                <marker date="1499245114000" expanded="true" signature="2473:2648" ph="/// Gets or sets the list of &lt;see cref=&quot;Meshes&quot;/&gt; which are used to represent different level of details of the ... " />
+                <marker date="1499245114000" expanded="true" signature="2911:3107" ph="/// Gets or sets the &lt;see cref=&quot;BoundingNode&quot;/&gt; instances forming the bounding tree with which parts of a mesh ... " />
+                <marker date="1499245114000" expanded="true" signature="3254:3469" ph="/// Gets or sets the &lt;see cref=&quot;VertexBuffer&quot;/&gt; instance storing the data which forms the shape's surface. Saved ... " />
+                <marker date="1499245114000" expanded="true" signature="3698:5478" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="4836:5058" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5075:5416" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5534:6868" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="6409:6526" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="6543:6815" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="6880:7008" ph="/// Represents flags determining which data is available for &lt;see cref=&quot;Shape&quot;/&gt; instances. ... " />
+                <marker date="1499245114000" expanded="true" signature="7054:7340" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="7069:7191" ph="/// The &lt;see cref=&quot;Shape&quot;/&gt; instance references a &lt;see cref=&quot;VertexBuffer&quot;/&gt;. ... " />
+                <marker date="1499245114000" expanded="true" signature="7235:7308" ph="/// Set in some BotW models. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bone.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/Skeleton/Bone.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="124" column="45" lean-forward="false" selection-start-line="124" selection-start-column="45" selection-end-line="124" selection-end-column="45" />
+              <folding>
+                <marker date="1499245114000" expanded="false" signature="6:96" ph="..." />
+                <marker date="1499245114000" expanded="true" signature="132:8447" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="139:307" ph="/// Represents a single bone in a &lt;see cref=&quot;Skeleton&quot;/&gt; section, storing its initial transform and transformatio ... " />
+                <marker date="1499245114000" expanded="true" signature="404:5553" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="1254:1429" ph="/// Gets or sets the name with which the instance can be referenced uniquely in &lt;see cref=&quot;ResDict{Bone}&quot;/&gt; ... " />
+                <marker date="1499245114000" expanded="true" signature="1480:1613" ph="/// Gets or sets the index of the parent &lt;see cref=&quot;Bone&quot;/&gt; this instance is a child of. ... " />
+                <marker date="1499245114000" expanded="true" signature="1671:1780" ph="/// Gets or sets the index of a matrix used for smooth skinning. ... " />
+                <marker date="1499245114000" expanded="true" signature="1843:1951" ph="/// Gets or sets the index of a matrix used for rigid skinning. ... " />
+                <marker date="1499245114000" expanded="true" signature="2065:2159" ph="/// Gets or sets flags controlling bone behavior. ... " />
+                <marker date="1499245114000" expanded="true" signature="2190:2328" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2338:2475" ph="/// Gets or sets the rotation method used to store bone rotations in &lt;see cref=&quot;Rotation&quot;/&gt;. ... " />
+                <marker date="1499245114000" expanded="true" signature="2522:2680" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="2690:2801" ph="/// Gets or sets the billboard transformation applied to the bone. ... " />
+                <marker date="1499245114000" expanded="true" signature="2850:3015" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3073:3238" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3308:3503" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="3513:3605" ph="/// Gets or sets the spatial scale of the bone. ... " />
+                <marker date="1499245114000" expanded="true" signature="3659:3863" ph="/// Gets or sets the spatial rotation of the bone. If &lt;see cref=&quot;BoneFlagsRotation.EulerXYZ&quot;/&gt; is used, the ... " />
+                <marker date="1499245114000" expanded="true" signature="3920:4015" ph="/// Gets or sets the spatial position of the bone. ... " />
+                <marker date="1499245114000" expanded="true" signature="4072:4185" ph="/// Gets or sets customly attached &lt;see cref=&quot;UserData&quot;/&gt; instances. ... " />
+                <marker date="1499245114000" expanded="true" signature="4413:5002" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5050:5547" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5559:5643" ph="/// Represents flags controlling bone behavior. ... " />
+                <marker date="1499245114000" expanded="true" signature="5676:5800" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5691:5769" ph="/// Set when the bone is visible. ... " />
+                <marker date="1499245114000" expanded="true" signature="5806:5907" ph="/// Represents the rotation method used to store bone rotations. ... " />
+                <marker date="1499245114000" expanded="true" signature="5948:6229" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="5963:6049" ph="/// A quaternion represents the rotation. ... " />
+                <marker date="1499245114000" expanded="true" signature="6079:6196" ph="/// A &lt;see cref=&quot;Vector3F&quot;/&gt; represents the Euler rotation in XYZ order. ... " />
+                <marker date="1499245114000" expanded="true" signature="6235:6355" ph="/// Represents the possible transformations for bones to handle them as billboards. ... " />
+                <marker date="1499245114000" expanded="true" signature="6397:7684" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="6412:6490" ph="/// No transformation is applied. ... " />
+                <marker date="1499245114000" expanded="true" signature="6514:6599" ph="/// Transforms of the child are applied. ... " />
+                <marker date="1499245114000" expanded="true" signature="6634:6728" ph="/// Transforms the Z axis parallel to the camera. ... " />
+                <marker date="1499245114000" expanded="true" signature="6773:6884" ph="/// Transforms the Z axis parallel to the direction of the camera. ... " />
+                <marker date="1499245114000" expanded="true" signature="6928:7076" ph="/// Transforms the Y axis parallel to the camera up vector, and the Z parallel to the camera up-vector. ... " />
+                <marker date="1499245114000" expanded="true" signature="7122:7294" ph="/// Transforms the Y axis parallel to the camera up vector, and the Z axis parallel to the direction of the ... " />
+                <marker date="1499245114000" expanded="true" signature="7339:7461" ph="/// Transforms the Z axis parallel to the camera by rotating only the Y axis. ... " />
+                <marker date="1499245114000" expanded="true" signature="7506:7645" ph="/// Transforms the Z axis parallel to the direction of the camera by rotating only the Y axis. ... " />
+                <marker date="1499245114000" expanded="true" signature="7739:8059" ph="{...}" />
+                <marker date="1499245114000" expanded="true" signature="8124:8445" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -41,12 +131,12 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Syroot2Unity.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
-                <marker date="1500419841000" expanded="true" signature="6:98" ph="..." />
-                <marker date="1500419841000" expanded="true" signature="142:463" ph="{...}" />
-                <marker date="1500419841000" expanded="true" signature="215:303" ph="{...}" />
-                <marker date="1500419841000" expanded="true" signature="370:461" ph="{...}" />
+                <marker date="1500429809000" expanded="true" signature="6:98" ph="..." />
+                <marker date="1500429809000" expanded="true" signature="142:483" ph="{...}" />
+                <marker date="1500429809000" expanded="true" signature="215:303" ph="{...}" />
+                <marker date="1500429809000" expanded="true" signature="370:481" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -55,8 +145,12 @@
     </leaf>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/Shape/Shape.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Syroot2Unity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BFRESLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/VertexBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/Skeleton/Bone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Common/Buffer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -72,9 +166,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1284" />
+    <option name="x" value="4" />
     <option name="width" value="1276" />
-    <option name="height" value="768" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -212,7 +306,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1284" y="0" width="1276" height="768" extended-state="0" />
+    <frame x="4" y="0" width="1276" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -302,35 +396,163 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Syroot2Unity.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
-            <marker date="1500419841000" expanded="true" signature="6:98" ph="..." />
-            <marker date="1500419841000" expanded="true" signature="142:463" ph="{...}" />
-            <marker date="1500419841000" expanded="true" signature="215:303" ph="{...}" />
-            <marker date="1500419841000" expanded="true" signature="370:461" ph="{...}" />
+            <marker date="1500429809000" expanded="true" signature="6:98" ph="..." />
+            <marker date="1500429809000" expanded="true" signature="142:483" ph="{...}" />
+            <marker date="1500429809000" expanded="true" signature="215:303" ph="{...}" />
+            <marker date="1500429809000" expanded="true" signature="370:481" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Common/Buffer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <marker date="1499245114000" expanded="true" signature="72:2027" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="79:202" ph="/// Represents a buffer of data uploaded to the GX2 GPU which can hold arbitrary data. ... " />
+            <marker date="1499245114000" expanded="true" signature="237:2025" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="374:458" ph="/// The size of a full vertex in bytes. ... " />
+            <marker date="1499245114000" expanded="true" signature="511:600" ph="/// The raw bytes stored for each buffering. ... " />
+            <marker date="1499245114000" expanded="true" signature="823:1449" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1172:1437" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1299:1394" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1497:2019" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1847:2007" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1915:1993" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/VertexBuffer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <marker date="1499245114000" expanded="false" signature="6:87" ph="..." />
+            <marker date="1499245114000" expanded="true" signature="123:3500" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="130:247" ph="/// Represents a data buffer holding vertices for a &lt;see cref=&quot;Model&quot;/&gt; subfile. ... " />
+            <marker date="1499245114000" expanded="true" signature="288:3498" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="606:847" ph="/// Gets or sets the number of bones influencing the vertices stored in this buffer. 0 influences equal ... " />
+            <marker date="1499245114000" expanded="true" signature="907:1150" ph="/// Gets the number of vertices stored by the &lt;see cref=&quot;Buffers&quot;/&gt;. It is calculated from the size of the first ... " />
+            <marker date="1499245114000" expanded="true" signature="1182:1727" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1208:1717" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1489:1640" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1737:1929" ph="/// Gets or sets the dictionary of &lt;see cref=&quot;VertexAttrib&quot;/&gt; instances describing how to interprete data in the ... " />
+            <marker date="1499245114000" expanded="true" signature="2001:2142" ph="/// Gets or sets the list of &lt;see cref=&quot;Buffer&quot;/&gt; instances storing raw unformatted vertex data. ... " />
+            <marker date="1499245114000" expanded="true" signature="2365:2956" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3004:3492" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/Skeleton/Bone.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="124" column="45" lean-forward="false" selection-start-line="124" selection-start-column="45" selection-end-line="124" selection-end-column="45" />
+          <folding>
+            <marker date="1499245114000" expanded="false" signature="6:96" ph="..." />
+            <marker date="1499245114000" expanded="true" signature="132:8447" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="139:307" ph="/// Represents a single bone in a &lt;see cref=&quot;Skeleton&quot;/&gt; section, storing its initial transform and transformatio ... " />
+            <marker date="1499245114000" expanded="true" signature="404:5553" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="1254:1429" ph="/// Gets or sets the name with which the instance can be referenced uniquely in &lt;see cref=&quot;ResDict{Bone}&quot;/&gt; ... " />
+            <marker date="1499245114000" expanded="true" signature="1480:1613" ph="/// Gets or sets the index of the parent &lt;see cref=&quot;Bone&quot;/&gt; this instance is a child of. ... " />
+            <marker date="1499245114000" expanded="true" signature="1671:1780" ph="/// Gets or sets the index of a matrix used for smooth skinning. ... " />
+            <marker date="1499245114000" expanded="true" signature="1843:1951" ph="/// Gets or sets the index of a matrix used for rigid skinning. ... " />
+            <marker date="1499245114000" expanded="true" signature="2065:2159" ph="/// Gets or sets flags controlling bone behavior. ... " />
+            <marker date="1499245114000" expanded="true" signature="2190:2328" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2338:2475" ph="/// Gets or sets the rotation method used to store bone rotations in &lt;see cref=&quot;Rotation&quot;/&gt;. ... " />
+            <marker date="1499245114000" expanded="true" signature="2522:2680" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="2690:2801" ph="/// Gets or sets the billboard transformation applied to the bone. ... " />
+            <marker date="1499245114000" expanded="true" signature="2850:3015" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3073:3238" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3308:3503" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="3513:3605" ph="/// Gets or sets the spatial scale of the bone. ... " />
+            <marker date="1499245114000" expanded="true" signature="3659:3863" ph="/// Gets or sets the spatial rotation of the bone. If &lt;see cref=&quot;BoneFlagsRotation.EulerXYZ&quot;/&gt; is used, the ... " />
+            <marker date="1499245114000" expanded="true" signature="3920:4015" ph="/// Gets or sets the spatial position of the bone. ... " />
+            <marker date="1499245114000" expanded="true" signature="4072:4185" ph="/// Gets or sets customly attached &lt;see cref=&quot;UserData&quot;/&gt; instances. ... " />
+            <marker date="1499245114000" expanded="true" signature="4413:5002" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5050:5547" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5559:5643" ph="/// Represents flags controlling bone behavior. ... " />
+            <marker date="1499245114000" expanded="true" signature="5676:5800" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5691:5769" ph="/// Set when the bone is visible. ... " />
+            <marker date="1499245114000" expanded="true" signature="5806:5907" ph="/// Represents the rotation method used to store bone rotations. ... " />
+            <marker date="1499245114000" expanded="true" signature="5948:6229" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5963:6049" ph="/// A quaternion represents the rotation. ... " />
+            <marker date="1499245114000" expanded="true" signature="6079:6196" ph="/// A &lt;see cref=&quot;Vector3F&quot;/&gt; represents the Euler rotation in XYZ order. ... " />
+            <marker date="1499245114000" expanded="true" signature="6235:6355" ph="/// Represents the possible transformations for bones to handle them as billboards. ... " />
+            <marker date="1499245114000" expanded="true" signature="6397:7684" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="6412:6490" ph="/// No transformation is applied. ... " />
+            <marker date="1499245114000" expanded="true" signature="6514:6599" ph="/// Transforms of the child are applied. ... " />
+            <marker date="1499245114000" expanded="true" signature="6634:6728" ph="/// Transforms the Z axis parallel to the camera. ... " />
+            <marker date="1499245114000" expanded="true" signature="6773:6884" ph="/// Transforms the Z axis parallel to the direction of the camera. ... " />
+            <marker date="1499245114000" expanded="true" signature="6928:7076" ph="/// Transforms the Y axis parallel to the camera up vector, and the Z parallel to the camera up-vector. ... " />
+            <marker date="1499245114000" expanded="true" signature="7122:7294" ph="/// Transforms the Y axis parallel to the camera up vector, and the Z axis parallel to the direction of the ... " />
+            <marker date="1499245114000" expanded="true" signature="7339:7461" ph="/// Transforms the Z axis parallel to the camera by rotating only the Y axis. ... " />
+            <marker date="1499245114000" expanded="true" signature="7506:7645" ph="/// Transforms the Z axis parallel to the direction of the camera by rotating only the Y axis. ... " />
+            <marker date="1499245114000" expanded="true" signature="7739:8059" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="8124:8445" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Model/Shape/Shape.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="85" column="57" lean-forward="false" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
+          <folding>
+            <marker date="1499245114000" expanded="false" signature="6:110" ph="..." />
+            <marker date="1499245114000" expanded="true" signature="146:7342" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="153:254" ph="/// Represents an FSHP section in a &lt;see cref=&quot;Model&quot;/&gt; subfile. ... " />
+            <marker date="1499245114000" expanded="true" signature="353:6874" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="671:847" ph="/// Gets or sets the name with which the instance can be referenced uniquely in &lt;see cref=&quot;ResDict{Shape}&quot;/&gt; ... " />
+            <marker date="1499245114000" expanded="true" signature="898:1020" ph="/// Gets or sets flags determining which data is available for this instance. ... " />
+            <marker date="1499245114000" expanded="true" signature="1076:1256" ph="/// Gets or sets the index of the material to apply to the shapes surface in the owning ... " />
+            <marker date="1499245114000" expanded="true" signature="1316:1575" ph="/// Gets or sets the index of the &lt;see cref=&quot;Bone&quot;/&gt; to which this instance is directly attached to. The bone ... " />
+            <marker date="1499245114000" expanded="true" signature="1631:1802" ph="/// Gets or sets the index of the &lt;see cref=&quot;VertexBuffer&quot;/&gt; in the owning &lt;see cref=&quot;Model.VertexBuffers&quot;/&gt; ... " />
+            <marker date="1499245114000" expanded="true" signature="1866:1967" ph="/// Gets or sets the bounding radius spanning the shape. ... " />
+            <marker date="1499245114000" expanded="true" signature="2019:2260" ph="/// Gets or sets the number of bones influencing the vertices stored in this buffer. 0 influences equal ... " />
+            <marker date="1499245114000" expanded="true" signature="2320:2411" ph="/// Gets or sets a value with unknown purpose. ... " />
+            <marker date="1499245114000" expanded="true" signature="2473:2648" ph="/// Gets or sets the list of &lt;see cref=&quot;Meshes&quot;/&gt; which are used to represent different level of details of the ... " />
+            <marker date="1499245114000" expanded="true" signature="2911:3107" ph="/// Gets or sets the &lt;see cref=&quot;BoundingNode&quot;/&gt; instances forming the bounding tree with which parts of a mesh ... " />
+            <marker date="1499245114000" expanded="true" signature="3254:3469" ph="/// Gets or sets the &lt;see cref=&quot;VertexBuffer&quot;/&gt; instance storing the data which forms the shape's surface. Saved ... " />
+            <marker date="1499245114000" expanded="true" signature="3698:5478" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="4836:5058" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5075:5416" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="5534:6868" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="6409:6526" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="6543:6815" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="6880:7008" ph="/// Represents flags determining which data is available for &lt;see cref=&quot;Shape&quot;/&gt; instances. ... " />
+            <marker date="1499245114000" expanded="true" signature="7054:7340" ph="{...}" />
+            <marker date="1499245114000" expanded="true" signature="7069:7191" ph="/// The &lt;see cref=&quot;Shape&quot;/&gt; instance references a &lt;see cref=&quot;VertexBuffer&quot;/&gt;. ... " />
+            <marker date="1499245114000" expanded="true" signature="7235:7308" ph="/// Set in some BotW models. ... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BFRESLoader.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        <state relative-caret-position="379">
+          <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
           <folding>
-            <marker date="1500423458000" expanded="false" signature="6:210" ph="..." />
-            <marker date="1500423458000" expanded="true" signature="252:2402" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="325:349" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="412:2400" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="833:896" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="979:1104" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="1111:1181" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="1258:1306" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="1328:1443" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="1599:2397" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="1813:2393" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="2491:2689" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="2532:2687" ph="{...}" />
-            <marker date="1500423458000" expanded="true" signature="2648:2684" ph="{...}" />
+            <marker date="1500432066000" expanded="false" signature="6:210" ph="..." />
+            <marker date="1500432066000" expanded="true" signature="252:3276" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="325:349" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="412:3274" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="833:896" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="979:1104" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="1111:1181" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="1258:1306" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="1328:1443" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="1599:3271" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="1830:2410" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="2487:3267" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="2983:3262" ph="/* Create new mesh (not currently functional) ... */" />
+            <marker date="1500432066000" expanded="true" signature="3365:3563" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="3406:3561" ph="{...}" />
+            <marker date="1500432066000" expanded="true" signature="3522:3558" ph="{...}" />
           </folding>
         </state>
       </provider>
