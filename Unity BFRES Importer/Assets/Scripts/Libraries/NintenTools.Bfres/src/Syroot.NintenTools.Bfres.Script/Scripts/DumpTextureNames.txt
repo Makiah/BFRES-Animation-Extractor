@@ -1,0 +1,5 @@
+﻿WriteLine($"The BFRES file \"{ResFileName}\" has {ResFile.Textures.Count} textures:");
+foreach (Texture texture in ResFile.Textures.Values)
+{
+    WriteLine(texture.Name);
+}

@@ -1,0 +1,60 @@
+// ==== Structures =====================================================================================================
+
+typedef struct // VisibilityAnim
+{
+	char signature[4]; // FVIS
+	NameOffset ofsName;
+	NameOffset ofsPath;
+	enum <ushort> VisibilityAnimFlags
+	{
+		VAF_None,
+		VAF_CurveBaked = 1 << 0,
+		VAF_IsLooping = 1 << 2
+	} flg : 8;
+	enum <ushort> VisibilityType
+	{
+		VT_Bone,
+		VT_Material
+	} flgType : 1;
+	ushort numUserData;
+	int numFrame;
+	ushort numAnim;
+	ushort numCurve;
+	uint sizBaked;
+	Offset ofsModel; // Points to FMDL
+	Offset ofsBindIndexList;
+	Offset ofsNameList;
+	Offset ofsCurveList;
+	Offset ofsBaseValue;
+	Offset ofsUserDataDict;
+	// Read bind indices.
+	FSeek(ofsBindIndexList.target);
+	ushort bindIndices[numAnim] <optimize=true>;
+	FAlign(4);
+	// Read names.
+	FSeek(ofsNameList.target);
+	NameOffset names[numAnim] <optimize=true>;
+	// Read animation curves.
+	if (numCurve)
+	{
+		FSeek(ofsCurveList.target);
+		AnimCurve animCurves[numCurve] <optimize=false>;
+	}
+	// Read base values (bits controlling visibility).
+	FSeek(ofsBaseValue.target);
+	byte baseValues[Ceil(numAnim / sizeof(byte))] <format=binary, optimize=true>;
+	FAlign(4);
+	// Read user data.
+	if (ofsUserDataDict.value)
+	{
+		FSeek(ofsUserDataDict.target);
+		Dict userData(DT_USER_DATA);
+	}
+} VisibilityAnim <bgcolor=0xEFFFCD, read=VisibilityAnimRead>;
+
+// ==== Template Methods ===============================================================================================
+
+string VisibilityAnimRead(VisibilityAnim &visibilityAnim)
+{
+	return visibilityAnim.ofsName.name;
+}

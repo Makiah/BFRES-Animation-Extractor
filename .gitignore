@@ -7,3 +7,5 @@
 *.rarc.meta
 *.fbx
 *.fbx.meta
+!NintenTools.Bfres
+!NintenTools.Bfres.meta
