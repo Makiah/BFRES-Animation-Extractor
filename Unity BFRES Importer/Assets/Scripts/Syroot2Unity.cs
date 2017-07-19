@@ -5,12 +5,20 @@ using UnityEngine;
 
 public class Syroot2Unity : MonoBehaviour 
 {
-    public static UnityEngine.Vector3 toUnityVector(Vector3F vector3f)
+    public static UnityEngine.Vector3 ToUnityVector(Vector3F vector3F)
     {
-        return new UnityEngine.Vector3(vector3f.X, vector3f.Y, vector3f.Z);
+        return new UnityEngine.Vector3(vector3F.X, vector3F.Y, vector3F.Z);
     }
 
-    public static Quaternion toUnityQuaternion(Vector4F rotation)
+    public static UnityEngine.Vector3 ToUnityVector(Vector4F vector4F)
+    {
+        if (!vector4F.W.NearlyEquals(1))
+            Debug.Log("Losing accuracy on " + vector4F + " conversion, as w is not one!");
+        
+        return new UnityEngine.Vector3(vector4F.X, vector4F.Y, vector4F.Z);
+    }
+
+    public static Quaternion ToUnityQuaternion(Vector4F rotation)
     {
         return Quaternion.Inverse(new Quaternion(rotation.X, rotation.Y, rotation.Z, rotation.W));
     }

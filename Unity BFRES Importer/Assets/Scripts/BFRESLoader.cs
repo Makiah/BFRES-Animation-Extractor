@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Syroot.Maths;
 using Syroot.NintenTools.Bfres;
+using Syroot.NintenTools.Bfres.Helpers;
 using Syroot.NintenTools.Yaz0;
 using UnityEditor;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class BFRESLoader : MonoBehaviour
 {
@@ -75,33 +78,53 @@ public class BFRESLoader : MonoBehaviour
 					instantiatedBone.SetParent(boneReferences[bone.ParentIndex]);
 				boneReferences.Add(instantiatedBone);
 				
-				instantiatedBone.localPosition = Syroot2Unity.toUnityVector(bone.Position);
-				instantiatedBone.localRotation = Syroot2Unity.toUnityQuaternion(bone.Rotation);
-				instantiatedBone.localScale = Syroot2Unity.toUnityVector(bone.Scale);
+				instantiatedBone.localPosition = Syroot2Unity.ToUnityVector(bone.Position);
+				instantiatedBone.localRotation = Syroot2Unity.ToUnityQuaternion(bone.Rotation);
+				instantiatedBone.localScale = Syroot2Unity.ToUnityVector(bone.Scale);
 			}
 			
 			//Set up renderers.  
-			foreach (Shape shape in model.Shapes.Values)
+			foreach (var shape in model.Shapes.Values)
 			{
 				//Set up the shape.  
-				var currentShape = new GameObject(shape.Name);
-				currentShape.transform.SetParent(modelParent);
-				currentShape.transform.localPosition = Vector3.zero;
-				currentShape.transform.localRotation = Quaternion.identity;
-				currentShape.transform.localScale = Vector3.one;
+				var instantiatedShape = new GameObject(shape.Name);
+				instantiatedShape.transform.SetParent(modelParent);
+				instantiatedShape.transform.localPosition = Vector3.zero;
+				instantiatedShape.transform.localRotation = Quaternion.identity;
+				instantiatedShape.transform.localScale = Vector3.one;
 
 				//Will display the item and deform based on skeleton.  
-				currentShape.AddComponent<SkinnedMeshRenderer>();
-				var smr = currentShape.GetComponent<SkinnedMeshRenderer>();
+				instantiatedShape.AddComponent<SkinnedMeshRenderer>();
+				var smr = instantiatedShape.GetComponent<SkinnedMeshRenderer>();
+				
+				//Create the helper class to work with VertexBuffer data.  
+				var helper = new VertexBufferHelper(shape.VertexBuffer, loadedFile.ByteOrder);
+
+				VertexBufferHelperAttrib positions = helper["_p0"];
+				VertexBufferHelperAttrib normals = helper[1];
+				
+				//Converted to a method group and a LINQ expression (through Rider magic)
+				List<Vector3> vertices = positions.Data.Select(Syroot2Unity.ToUnityVector).ToList();
 				
 				//Create new mesh (not currently functional)
-//				Vector3[] newVertices = null;
-//				Vector2[] newUV = null;
-//				int[] newTriangles = null;
-//				var mesh = new UnityEngine.Mesh();
-//				mesh.vertices = newVertices;
-//				mesh.uv = newUV;
-//				mesh.triangles = newTriangles;
+				UnityEngine.Vector3[] newVertices = vertices.ToArray();
+//				UnityEngine.Vector2[] newUV = null;
+				int[] newTriangles = new int[newVertices.Length - newVertices.Length % 3];
+				for (int i = 0; i < newTriangles.Length; i++)
+				{
+					newTriangles[i] = i % 3; //Random for now.  
+				}
+				
+//				//This is apparently called an object initializer.  
+				var mesh = new UnityEngine.Mesh
+				{
+					vertices = newVertices,
+//					uv = newUV,
+					triangles = newTriangles
+				};
+
+				//Set the SMR mesh to this mesh.  
+				smr.sharedMesh = mesh;
 			}
 		}
 	}
