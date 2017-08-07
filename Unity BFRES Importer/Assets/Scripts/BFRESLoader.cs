@@ -60,72 +60,8 @@ public class BFRESLoader : MonoBehaviour
 		Debug.Log("Loaded " + loadedFile.Name + " successfully!");
 		
 		//Now begin to load model components.  
-		foreach (var model in loadedFile.Models.Values)
+		foreach (var model in loadedFile.SkeletalAnims)
 		{
-			Debug.Log("Now loading " + model.Name);
-			var modelParent = new GameObject(model.Name).transform;
-
-			//Set up skeleton.  
-			var boneReferences = new List<Transform>();
-			foreach (var bone in model.Skeleton.Bones.Values)
-			{
-				//Set bone properties.  
-				var instantiatedBone = new GameObject(bone.Name).transform;
-				instantiatedBone.SetParent(modelParent);
-				
-				//Concisely sets up bone hierarchy. 
-				if (boneReferences.Count > 0)
-					instantiatedBone.SetParent(boneReferences[bone.ParentIndex]);
-				boneReferences.Add(instantiatedBone);
-				
-				instantiatedBone.localPosition = Syroot2Unity.ToUnityVector(bone.Position);
-				instantiatedBone.localRotation = Syroot2Unity.ToUnityQuaternion(bone.Rotation);
-				instantiatedBone.localScale = Syroot2Unity.ToUnityVector(bone.Scale);
-			}
-			
-			//Set up renderers.  
-			foreach (var shape in model.Shapes.Values)
-			{
-				//Set up the shape.  
-				var instantiatedShape = new GameObject(shape.Name);
-				instantiatedShape.transform.SetParent(modelParent);
-				instantiatedShape.transform.localPosition = Vector3.zero;
-				instantiatedShape.transform.localRotation = Quaternion.identity;
-				instantiatedShape.transform.localScale = Vector3.one;
-
-				//Will display the item and deform based on skeleton.  
-				instantiatedShape.AddComponent<SkinnedMeshRenderer>();
-				var smr = instantiatedShape.GetComponent<SkinnedMeshRenderer>();
-				
-				//Create the helper class to work with VertexBuffer data.  
-				var helper = new VertexBufferHelper(shape.VertexBuffer, loadedFile.ByteOrder);
-
-				VertexBufferHelperAttrib positions = helper["_p0"];
-				VertexBufferHelperAttrib normals = helper[1];
-				
-				//Converted to a method group and a LINQ expression (through Rider magic)
-				List<Vector3> vertices = positions.Data.Select(Syroot2Unity.ToUnityVector).ToList();
-				
-				//Create new mesh (not currently functional)
-				UnityEngine.Vector3[] newVertices = vertices.ToArray();
-//				UnityEngine.Vector2[] newUV = null;
-				int[] newTriangles = new int[newVertices.Length - newVertices.Length % 3];
-				for (int i = 0; i < newTriangles.Length; i++)
-				{
-					newTriangles[i] = i % 3; //Random for now.  
-				}
-				
-//				//This is apparently called an object initializer.  
-				var mesh = new UnityEngine.Mesh
-				{
-					vertices = newVertices,
-//					uv = newUV,
-					triangles = newTriangles
-				};
-
-				//Set the SMR mesh to this mesh.  
-				smr.sharedMesh = mesh;
-			}
 		}
 	}
 }
