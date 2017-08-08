@@ -8,33 +8,37 @@ using Syroot.NintenTools.Bfres;
 using Syroot.NintenTools.Bfres.Helpers;
 using Syroot.NintenTools.Yaz0;
 using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
 public class BFRESLoader : MonoBehaviour
 {
-	[SerializeField] private string sbfresToLoad;
+	[SerializeField] private GameObject objectForAttach;
+	[SerializeField] private string sbfresModel, sbfresAnimation;
+	private RuntimeAnimatorController modelAnimatorController;
 	
 	private void Start()
-	{
+	{	
 		ImportSBFRES();
 	}
-	
-	// Use this for initialization
-	public void ImportSBFRES ()
+
+	private ResFile GetResFileFromSBFRES(string sbfres)
 	{
 		//Determine the paths of each of the components for the extraction.  
 		string sbfresFolder = Path.Combine(Application.dataPath, "SBFRES");
-		string sbfresFile = Path.Combine(sbfresFolder, sbfresToLoad);
-		string bfresFile = Path.Combine(sbfresFolder, "Animal_Bass.bfres");
+		// Get model.  
+		string sbfresFile = Path.Combine(sbfresFolder, sbfres);
 
 		//Make sure that the specified sbfresFile path exists.  
 		if (!File.Exists(sbfresFile) || Path.GetExtension(sbfresFile).Equals("sbfres"))
 		{
 			Debug.Log(sbfresFile + " was invalid!");
-			return;
+			return null;
 		}
-
+		
+		string bfresFile = Path.Combine(sbfresFolder, sbfres.Substring(0, sbfres.IndexOf(".", StringComparison.Ordinal)) + ".bfres");
+		
 		//Extract the SBFRES file to a loadable BFRES.  
 		if (!File.Exists(bfresFile))
 		{
@@ -55,14 +59,86 @@ public class BFRESLoader : MonoBehaviour
 		catch (Exception e)
 		{
 			Debug.Log("Error while attempting to load " + bfresFile + " into a ResFile instance: " + e);
-			return;
+			return null;
 		}
-		Debug.Log("Loaded " + loadedFile.Name + " successfully!");
+		Debug.Log("Loaded " + loadedFile.Name + " (version " + loadedFile.Version + ") successfully!");
+
+		return loadedFile;
+	}
+	
+	// Use this for initialization
+	public void ImportSBFRES ()
+	{
+		// Load both ResFiles.  
+		ResFile
+			modelFile = GetResFileFromSBFRES(sbfresModel),
+			animationFile = GetResFileFromSBFRES(sbfresAnimation);
 		
-		//Now begin to load model components.  
-		foreach (var model in loadedFile.SkeletalAnims)
+		//Now begin to load animations.  
+		foreach (var anim in animationFile.SkeletalAnims)
 		{
+			// anim.key = anim.value.name
+			Debug.Log("Found skeletal animation " + anim.Key + " which is " + anim.Value.FrameCount + " long");
+			
+//			RuntimeAnimatorController controller = new RuntimeAnimatorController();
+//			controller.name = "TestController";
+//			objectForAttach.GetComponent<Animator>().runtimeAnimatorController = controller;
+			
+			// Create new animation clip.  
+//			AnimationClip clip = new AnimationClip(); // Will be saved as something.anim.  
+//			clip.name = anim.Key;
+
+			// Each bone anim applies to a single skeleton bone.  It has the curves already applied.  
+			foreach (var boneAnim in anim.Value.BoneAnims) 
+			{
+				foreach (var curve in boneAnim.Curves)
+				{
+					Debug.Log("Found new curve of type " + curve.CurveType.ToString() + " and key type " + curve.KeyType.ToString());
+					
+					// Construct new curve.  
+					//clip.SetCurve(boneAnim.Name, typeof(Transform), curve.);
+				}
+			}
+			
+			// Save animation once complete.  
+//			AssetDatabase.CreateAsset(yourAnimClip, "Assets/MyAnim.anim");
+//			AssetDatabase.SaveAssets();
 		}
+
+//		foreach (var anim in animationFile.BoneVisibilityAnims)
+//		{
+//			Debug.Log("Found bone visibility animation " + anim.Key);
+//		}
+//
+//		foreach (var anim in animationFile.ColorAnims)
+//		{
+//			Debug.Log("Found color animation " + anim.Key);
+//		}
+//
+//		foreach (var anim in animationFile.MatVisibilityAnims)
+//		{
+//			Debug.Log("Found material visibility animation " + anim.Key);
+//		}
+//
+//		foreach (var anim in animationFile.SceneAnims)
+//		{
+//			Debug.Log("Found scene animation " + anim.Key);
+//		}
+//
+//		foreach (var anim in animationFile.ShapeAnims)
+//		{
+//			Debug.Log("Found shape animation " + anim.Key);
+//		}
+//
+//		foreach (var anim in animationFile.TexPatternAnims)
+//		{
+//			Debug.Log("Found tex pattern animation " + anim.Key);
+//		}
+//
+//		foreach (var anim in animationFile.TexSrtAnims)
+//		{
+//			Debug.Log("Found tex srt animation " + anim.Key);
+//		}
 	}
 }
 

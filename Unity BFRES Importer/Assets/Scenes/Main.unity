@@ -214,7 +214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cbd312387d0468e82396c37563432c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sbfresToLoad: Animal_Bass.sbfres
+  objectForAttach: {fileID: 679106231}
+  sbfresModel: Animal_Bass.sbfres
+  sbfresAnimation: Animal_Bass_Animation.sbfres
 --- !u!4 &326987662
 Transform:
   m_ObjectHideFlags: 0
@@ -270,6 +272,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e001dacaf284434080c5c0dca0a6fbd, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &679106231 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 1e001dacaf284434080c5c0dca0a6fbd, type: 3}
+  m_PrefabInternal: {fileID: 359926795}
 --- !u!1 &852688076
 GameObject:
   m_ObjectHideFlags: 0
