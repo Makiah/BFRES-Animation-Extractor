@@ -1,0 +1,28 @@
+********************************************************************************
+*                      Sunday, August 13, 2017 6:50:09 PM                      *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 2.1.0.47
+Platform: Mac
+Target assembly: Assembly-CSharp.dll
+Project directory: /Users/makiah/Desktop/BOTW/BFRES-Animation-Extractor/Unity BFRES Importer
+Target profile directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api
+Unity Mono directory: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge
+Compiler: Microsoft C# 7.0
+
+- Compilation -----------------------------------------------
+
+Process: /Library/Frameworks/Mono.framework/Commands/mono
+Arguments: "/Users/makiah/Desktop/BOTW/BFRES-Animation-Extractor/Unity BFRES Importer/CSharp70Support/Roslyn/csc.exe" -nostdlib+ -noconfig -nologo -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/mscorlib.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Core.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Facades/System.Runtime.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/Microsoft.CSharp.dll" -r:"/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5-api/System.Xml.dll" @Temp/UnityTempFile-c29d4b49333a64c26a84d877bccd95c3 -debug:portable
+Exit code: 0
+Elapsed time: 4.78 sec
+
+- Compiler output (0 lines):
+
+- Compiler errors (3 lines):
+0: Assets/Scripts/BFRESLoader.cs(18,47): warning CS0649: Field 'BFRESLoader.sbfresAnimation' is never assigned to, and will always have its default value null
+1: Assets/Scripts/Libraries/BinaryData/src/Syroot.BinaryData.Test/Program.cs(29,20): warning CS0649: Field 'TestObjectBase.w' is never assigned to, and will always have its default value 0
+2: Assets/Scripts/BFRESLoader.cs(18,34): warning CS0649: Field 'BFRESLoader.sbfresModel' is never assigned to, and will always have its default value null
+
+PDB to MDB conversion skipped since pdb2mdb doesn't support portable PDBs yet.
+Debugging and line numbers in stack traces won't be available.
+File "Temp/Assembly-CSharp.pdb" deleted
