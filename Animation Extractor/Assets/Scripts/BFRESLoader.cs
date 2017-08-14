@@ -87,15 +87,33 @@ public class BFRESLoader : MonoBehaviour
 			// Each bone anim applies to a single skeleton bone.  It has the curves already applied.  
 			foreach (var boneAnim in anim.Value.BoneAnims) 
 			{
-				foreach (var curve in boneAnim.Curves)
+				Debug.Log("Looking at individual bone " + boneAnim.Name);
+				
+				/*
+				Since there are 6 max curves for each bone, I'm assuming that each has to indicate some 
+				translation or rotation (not sure about scaling)
+				
+				Also I think that the 4 sub arrays for the 2d array is just different ways of formatting
+				the data (see AnimCurve.cs, line 158).  
+				*/
+				
+				foreach (AnimCurve curve in boneAnim.Curves)
 				{
 					AnimationCurve newCurve = new AnimationCurve();
 					
-					// TODO: curve.frames[frameIndex] not working, has to have second param, figure out why.  
-					float[] framesForIndex = new float[anim.Value.FrameCount];
-					foreach (float frameIndex in curve.Frames)
-					{}
+					curve.KeyType = AnimCurveKeyType.Single;
 					
+					int currentIndex = 0;
+					foreach (float frameTime in curve.Frames)
+					{
+						newCurve.AddKey(new Keyframe(frameTime, curve.Keys[currentIndex, 1]));
+						Debug.Log("Added new Keyframe(" + frameTime + ", " + curve.Keys[currentIndex, 1] + ")");
+						currentIndex++;
+					}
+
+					// Don't do more for now.  
+					return;
+
 					// Construct new curve.  
 //					clip.SetCurve(boneAnim.Name, typeof(Transform), "local.position.x", newCurve);
 				}

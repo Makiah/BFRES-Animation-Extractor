@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3c230d9-d69f-4feb-a4b5-72ad71361428" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BFRESLoader.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BFRESLoader.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="108" column="89" lean-forward="false" selection-start-line="108" selection-start-column="89" selection-end-line="108" selection-end-column="89" />
+              <folding>
+                <marker date="1502674606000" expanded="false" signature="6:337" ph="..." />
+                <marker date="1502674606000" expanded="true" signature="379:4673" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="582:607" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="661:1900" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="1024:1092" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="1308:1433" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="1440:1510" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="1587:1635" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="1657:1777" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="1963:4671" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="2202:3782" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="2350:2588" ph="/* Create new animation clip. ... */" />
+                <marker date="1502674606000" expanded="true" signature="2639:3643" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="2716:3014" ph="/* Since there are 6 max curves for each bone, I'm assuming that each has to indicate some ... */" />
+                <marker date="1502674606000" expanded="true" signature="3068:3638" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="3259:3467" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="3521:3632" ph="/* Construct new curve. ... */" />
+                <marker date="1502674606000" expanded="true" signature="3651:3778" ph="/* Save animation once complete. ... */" />
+                <marker date="1502674606000" expanded="true" signature="3784:4668" ph="/* foreach (var anim in animationFile.BoneVisibilityAnims) ... */" />
+                <marker date="1502674606000" expanded="true" signature="4762:4960" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="4803:4958" ph="{...}" />
+                <marker date="1502674606000" expanded="true" signature="4919:4955" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimCurve.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Common/AnimCurve.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="136" column="45" lean-forward="false" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
+              <folding>
+                <marker date="1502205416000" expanded="true" signature="72:12874" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="79:217" ph="/// Represents an animation curve used by several sections to control different parameters over time. ... " />
+                <marker date="1502205416000" expanded="true" signature="255:9345" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="883:1121" ph="/// Gets or sets the data type in which &lt;see cref=&quot;Frames&quot;/&gt; are loaded and saved. For simplicity, the class ... " />
+                <marker date="1502205416000" expanded="true" signature="1165:1342" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="1352:1588" ph="/// Gets or sets the data type in which &lt;see cref=&quot;Keys&quot;/&gt; are loaded and saved. For simplicity, the class ... " />
+                <marker date="1502205416000" expanded="true" signature="1628:1799" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="1809:1943" ph="/// Gets or sets the curve type, determining the number of elements stored with each key. ... " />
+                <marker date="1502205416000" expanded="true" signature="1982:2154" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="2164:2456" ph="/// Gets or sets the memory offset relative to the start of the corresponding animation data structure to ... " />
+                <marker date="1502205416000" expanded="true" signature="2515:2618" ph="/// Gets or sets the first frame at which a key is placed. ... " />
+                <marker date="1502205416000" expanded="true" signature="2674:2776" ph="/// Gets or sets the last frame at which a key is placed. ... " />
+                <marker date="1502205416000" expanded="true" signature="2830:2937" ph="/// Gets or sets the scale to multiply values of the curve by. ... " />
+                <marker date="1502205416000" expanded="true" signature="2988:3123" ph="/// Gets or sets the offset to add to the values of the curve (after multiplicating them). ... " />
+                <marker date="1502205416000" expanded="true" signature="3175:3293" ph="/// Gets or sets the difference between the lowest and highest key value. ... " />
+                <marker date="1502205416000" expanded="true" signature="3344:3491" ph="/// Gets the frame numbers at which keys of the same index in the &lt;see cref=&quot;Keys&quot;/&gt; array are placed. ... " />
+                <marker date="1502205416000" expanded="true" signature="3545:3734" ph="/// Gets an array of elements forming the elements of keys placed at the frames of the same index in the ... " />
+                <marker date="1502205416000" expanded="true" signature="3813:4172" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="3839:4162" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="3888:4148" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="4344:7278" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="4722:4795" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="4840:5848" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="4889:5834" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="5199:5331" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="5548:5663" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="5893:7266" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="6060:7223" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="6185:6299" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="6436:6683" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="6531:6657" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="6820:7066" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="6915:7040" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="7326:9339" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="7648:7712" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="7755:8482" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="7804:8468" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="8063:8176" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="8313:8419" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="8525:9327" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="8572:9313" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="8692:8790" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="8922:9027" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="9159:9264" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="9351:9585" ph="/// Represents the possible data types in which &lt;see cref=&quot;AnimCurve.Frames&quot;/&gt; are stored. For simple library use ... " />
+                <marker date="1502205416000" expanded="true" signature="9629:10058" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="9644:9756" ph="/// The frames are stored as &lt;see cref=&quot;System.Single&quot;/&gt; instances. ... " />
+                <marker date="1502205416000" expanded="true" signature="9782:9898" ph="/// The frames are stored as &lt;see cref=&quot;Bfres.Decimal10x5&quot;/&gt; instances. ... " />
+                <marker date="1502205416000" expanded="true" signature="9929:10039" ph="/// The frames are stored as &lt;see cref=&quot;System.Byte&quot;/&gt; instances. ... " />
+                <marker date="1502205416000" expanded="true" signature="10064:10296" ph="/// Represents the possible data types in which &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; are stored. For simple library use, ... " />
+                <marker date="1502205416000" expanded="true" signature="10338:10784" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="10353:10463" ph="/// The keys are stored as &lt;see cref=&quot;System.Single&quot;/&gt; instances. ... " />
+                <marker date="1502205416000" expanded="true" signature="10498:10612" ph="/// The keys are stored as &lt;see cref=&quot;Bfres.Decimal10x5&quot;/&gt; instances. ... " />
+                <marker date="1502205416000" expanded="true" signature="10646:10755" ph="/// The keys are stored as &lt;see cref=&quot;System.SByte&quot;/&gt; instances. ... " />
+                <marker date="1502205416000" expanded="true" signature="10790:11171" ph="/// Represents the type of key values stored by this curve. This also determines the number of required elements  ... " />
+                <marker date="1502205416000" expanded="true" signature="11210:12340" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="11225:11374" ph="/// The curve uses cubic interpolation. 4 elements of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array form a key. ... " />
+                <marker date="1502205416000" expanded="true" signature="11408:11558" ph="/// The curve uses linear interpolation. 2 elements of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array form a key. ... " />
+                <marker date="1502205416000" expanded="true" signature="11593:11706" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+                <marker date="1502205416000" expanded="true" signature="11745:11858" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+                <marker date="1502205416000" expanded="true" signature="11894:12007" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+                <marker date="1502205416000" expanded="true" signature="12044:12157" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+                <marker date="1502205416000" expanded="true" signature="12194:12307" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+                <marker date="1502205416000" expanded="true" signature="12372:12872" ph="{...}" />
+                <marker date="1502205416000" expanded="true" signature="12509:12801" ph="/// Gets or sets the memory offset relative to the start of the corresponding animation data structure to ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BFRESLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Common/AnimCurve.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/BFRESLoader.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
+    <option name="width" value="1276" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Animation Extractor (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
+      <method />
+    </configuration>
+    <configuration default="false" name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Unity Debug.Attach to Unity Editor" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="0" width="1276" height="800" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BFRESLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="108" column="89" lean-forward="false" selection-start-line="108" selection-start-column="89" selection-end-line="108" selection-end-column="89" />
+          <folding>
+            <marker date="1502674606000" expanded="false" signature="6:337" ph="..." />
+            <marker date="1502674606000" expanded="true" signature="379:4673" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="582:607" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="661:1900" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="1024:1092" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="1308:1433" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="1440:1510" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="1587:1635" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="1657:1777" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="1963:4671" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="2202:3782" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="2350:2588" ph="/* Create new animation clip. ... */" />
+            <marker date="1502674606000" expanded="true" signature="2639:3643" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="2716:3014" ph="/* Since there are 6 max curves for each bone, I'm assuming that each has to indicate some ... */" />
+            <marker date="1502674606000" expanded="true" signature="3068:3638" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="3259:3467" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="3521:3632" ph="/* Construct new curve. ... */" />
+            <marker date="1502674606000" expanded="true" signature="3651:3778" ph="/* Save animation once complete. ... */" />
+            <marker date="1502674606000" expanded="true" signature="3784:4668" ph="/* foreach (var anim in animationFile.BoneVisibilityAnims) ... */" />
+            <marker date="1502674606000" expanded="true" signature="4762:4960" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="4803:4958" ph="{...}" />
+            <marker date="1502674606000" expanded="true" signature="4919:4955" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Libraries/NintenTools.Bfres/src/Syroot.NintenTools.Bfres/Common/AnimCurve.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" column="45" lean-forward="false" selection-start-line="136" selection-start-column="45" selection-end-line="136" selection-end-column="45" />
+          <folding>
+            <marker date="1502205416000" expanded="true" signature="72:12874" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="79:217" ph="/// Represents an animation curve used by several sections to control different parameters over time. ... " />
+            <marker date="1502205416000" expanded="true" signature="255:9345" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="883:1121" ph="/// Gets or sets the data type in which &lt;see cref=&quot;Frames&quot;/&gt; are loaded and saved. For simplicity, the class ... " />
+            <marker date="1502205416000" expanded="true" signature="1165:1342" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="1352:1588" ph="/// Gets or sets the data type in which &lt;see cref=&quot;Keys&quot;/&gt; are loaded and saved. For simplicity, the class ... " />
+            <marker date="1502205416000" expanded="true" signature="1628:1799" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="1809:1943" ph="/// Gets or sets the curve type, determining the number of elements stored with each key. ... " />
+            <marker date="1502205416000" expanded="true" signature="1982:2154" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="2164:2456" ph="/// Gets or sets the memory offset relative to the start of the corresponding animation data structure to ... " />
+            <marker date="1502205416000" expanded="true" signature="2515:2618" ph="/// Gets or sets the first frame at which a key is placed. ... " />
+            <marker date="1502205416000" expanded="true" signature="2674:2776" ph="/// Gets or sets the last frame at which a key is placed. ... " />
+            <marker date="1502205416000" expanded="true" signature="2830:2937" ph="/// Gets or sets the scale to multiply values of the curve by. ... " />
+            <marker date="1502205416000" expanded="true" signature="2988:3123" ph="/// Gets or sets the offset to add to the values of the curve (after multiplicating them). ... " />
+            <marker date="1502205416000" expanded="true" signature="3175:3293" ph="/// Gets or sets the difference between the lowest and highest key value. ... " />
+            <marker date="1502205416000" expanded="true" signature="3344:3491" ph="/// Gets the frame numbers at which keys of the same index in the &lt;see cref=&quot;Keys&quot;/&gt; array are placed. ... " />
+            <marker date="1502205416000" expanded="true" signature="3545:3734" ph="/// Gets an array of elements forming the elements of keys placed at the frames of the same index in the ... " />
+            <marker date="1502205416000" expanded="true" signature="3813:4172" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="3839:4162" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="3888:4148" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="4344:7278" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="4722:4795" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="4840:5848" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="4889:5834" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="5199:5331" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="5548:5663" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="5893:7266" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="6060:7223" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="6185:6299" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="6436:6683" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="6531:6657" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="6820:7066" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="6915:7040" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="7326:9339" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="7648:7712" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="7755:8482" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="7804:8468" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="8063:8176" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="8313:8419" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="8525:9327" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="8572:9313" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="8692:8790" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="8922:9027" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="9159:9264" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="9351:9585" ph="/// Represents the possible data types in which &lt;see cref=&quot;AnimCurve.Frames&quot;/&gt; are stored. For simple library use ... " />
+            <marker date="1502205416000" expanded="true" signature="9629:10058" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="9644:9756" ph="/// The frames are stored as &lt;see cref=&quot;System.Single&quot;/&gt; instances. ... " />
+            <marker date="1502205416000" expanded="true" signature="9782:9898" ph="/// The frames are stored as &lt;see cref=&quot;Bfres.Decimal10x5&quot;/&gt; instances. ... " />
+            <marker date="1502205416000" expanded="true" signature="9929:10039" ph="/// The frames are stored as &lt;see cref=&quot;System.Byte&quot;/&gt; instances. ... " />
+            <marker date="1502205416000" expanded="true" signature="10064:10296" ph="/// Represents the possible data types in which &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; are stored. For simple library use, ... " />
+            <marker date="1502205416000" expanded="true" signature="10338:10784" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="10353:10463" ph="/// The keys are stored as &lt;see cref=&quot;System.Single&quot;/&gt; instances. ... " />
+            <marker date="1502205416000" expanded="true" signature="10498:10612" ph="/// The keys are stored as &lt;see cref=&quot;Bfres.Decimal10x5&quot;/&gt; instances. ... " />
+            <marker date="1502205416000" expanded="true" signature="10646:10755" ph="/// The keys are stored as &lt;see cref=&quot;System.SByte&quot;/&gt; instances. ... " />
+            <marker date="1502205416000" expanded="true" signature="10790:11171" ph="/// Represents the type of key values stored by this curve. This also determines the number of required elements  ... " />
+            <marker date="1502205416000" expanded="true" signature="11210:12340" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="11225:11374" ph="/// The curve uses cubic interpolation. 4 elements of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array form a key. ... " />
+            <marker date="1502205416000" expanded="true" signature="11408:11558" ph="/// The curve uses linear interpolation. 2 elements of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array form a key. ... " />
+            <marker date="1502205416000" expanded="true" signature="11593:11706" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+            <marker date="1502205416000" expanded="true" signature="11745:11858" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+            <marker date="1502205416000" expanded="true" signature="11894:12007" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+            <marker date="1502205416000" expanded="true" signature="12044:12157" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+            <marker date="1502205416000" expanded="true" signature="12194:12307" ph="/// 1 element of the &lt;see cref=&quot;AnimCurve.Keys&quot;/&gt; array forms a key. ... " />
+            <marker date="1502205416000" expanded="true" signature="12372:12872" ph="{...}" />
+            <marker date="1502205416000" expanded="true" signature="12509:12801" ph="/// Gets or sets the memory offset relative to the start of the corresponding animation data structure to ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

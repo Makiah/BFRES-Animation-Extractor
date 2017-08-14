@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectForAttach: {fileID: 679106231}
   sbfresModel: Animal_Bass.sbfres
-  sbfresAnimation: Animal_Bass_Animation.sbfres
+  sbfresAnimation: Animal_Bear_Animation.sbfres
 --- !u!4 &326987662
 Transform:
   m_ObjectHideFlags: 0
