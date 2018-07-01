@@ -1,3 +1,6 @@
+# Deprecation 
+Unfortunately I hit a brick wall with this project: not really sure how to progress with the actual extraction of animations as I'm unfamiliar with BoTW file types.  If you're interested in animation extraction then def check out https://github.com/KillzXGaming/Smash-Forge (in which actual progress has been made).  
+
 # BFRES Animation Extractor
 A C#-based BFRES animation extractor for Unity, based on the NuGet packages provided by RayKoopa and RTB's BFRES importer.  
 
